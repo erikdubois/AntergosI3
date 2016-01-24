@@ -302,6 +302,12 @@ You can use the program lxappearance to change these settings
 Type WIN + D  and choose lxappearance and press enter.
 
 
+#15. Choose fonts
+
+Choosing fonts and size of them can be done with the program qtconfig-qt4. Press Win + D and type and press enter
+
+	qtconfig-qt4
+
 
 # xx. Gaps or no gaps 
 
