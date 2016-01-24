@@ -18,22 +18,22 @@ https://i3wm.org/
 
 Yltra Flat Orange on Antergos I3
 Icons can be found at github
-https://github.com/erikdubois/Yltra-Flat
+https://github.com/erikdubois/Yltra-Flat - with gaps
 
 ![Screenshots](http://i.imgur.com/xtILBj5.jpg)
 
 
-
+no gaps
 ![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
 
 
 
-
+with gaps
 ![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
 
 
 
-
+no gaps
 ![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
 
 
@@ -270,11 +270,14 @@ The smb script is to install samba or the way to share folders and files between
     ./6_smb_vx.sh
 
 
-# 13. EXTRA i3-gaps
+# 13. Gaps or no gaps 
+
+Additional i3-gaps - not needed
 
 You can not have i3 and i3-gaps.
 
-It is a choice you have to make. 
+It is a choice you have to make. You can take a look at the pictures above how it looks.
+
 
 
 	./7_i3-with-gaps_v26.sh
