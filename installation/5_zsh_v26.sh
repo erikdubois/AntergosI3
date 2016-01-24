@@ -58,17 +58,19 @@ sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
 
 echo "################################################################"
 echo "oh-my-zsh"
-echo "You might need to type this again. Use your own name"
+echo "You need to type this. Use your own name"
 echo "sudo chsh username -s /bin/zsh"
 echo "################################################################"
 
 
 echo "################################################################"
+echo "You need to type this. Use your own name"
 echo "sudo chsh username -s /bin/zsh"
 echo "################################################################"
 
 
 echo "################################################################"
+echo "You need to type this. Use your own name"
 echo "sudo chsh username -s /bin/zsh"
 echo "################################################################"
 
