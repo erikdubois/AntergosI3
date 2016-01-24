@@ -351,9 +351,9 @@ https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
 
 Type this content inside and CTRL +X to save.
 
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --autologin username --noclear %I $TERM
+    [Service]
+    ExecStart=
+    ExecStart=-/usr/bin/agetty --autologin username --noclear %I $TERM
 
 
 
