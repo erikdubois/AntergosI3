@@ -184,7 +184,7 @@ sudo pacman -S gnome-disk-utility --noconfirm
 
         # P R I N T E R #
 
-sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer
+sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
 
