@@ -458,6 +458,9 @@ Share the knowledge.
 
 
 
+
+
+----------------------------------
 #What can you do if the script does not execute?
 
 Since I sometimes forget to make the script executable, I include here what you can do to solve that.
