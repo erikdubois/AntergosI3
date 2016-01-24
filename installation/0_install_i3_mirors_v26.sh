@@ -47,12 +47,17 @@
 # sudo fstrim -v / and /home
 
 echo "################################################################"
-echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
+echo "####  T O O L  T O  F I N D  F A S T E S T   S E R V E R S   ###"
 echo "################################################################"
 
 
 # installing refector to test wich servers are fastest
 sudo pacman -S reflector --noconfirm
+
+
+echo "################################################################"
+echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
+echo "################################################################"
 
 # finding the fastest archlinux servers
 sudo reflector -l 50 -f 20 --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/mirrorlist.new > /tmp/mirrorlist && sudo cp /tmp/mirrorlist /etc/pacman.d
