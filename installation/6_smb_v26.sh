@@ -37,7 +37,7 @@
 # http://askubuntu.com/questions/101350/software-similar-to-nautilus-share-in-thunar
 # net usershare add %n %f "" Everyone:F guest_ok=y && chmod 777 %f
 
-sudo pacman -S samba
+sudo pacman -S samba --noconfirm
 sudo cp  /etc/samba/smb.conf.default /etc/samba/smb.conf
 sudo systemctl enable smbd.service
 sudo systemctl start smbd.service
@@ -46,15 +46,15 @@ sudo systemctl start nmbd.service
 sudo smbpasswd -a erik
 
 #access samba share windows
-sudo pacman -S gvfs-smb
+sudo pacman -S gvfs-smb --noconfirm
 #access samba share mac
-sudo pacman -S gvfs-afp
+sudo pacman -S gvfs-afp --noconfirm
 
 # sudo systemctl restart ... if you run into trouble
 # testparm will check the conf file for errors
 
 # red hat samba sharing config 
-packer system-config-samba --noedit
+packer system-config-samba --noedit --noconfirm
 echo "Run system-config-samba to set up shares"
 
 

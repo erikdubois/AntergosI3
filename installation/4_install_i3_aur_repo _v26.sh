@@ -53,7 +53,7 @@ echo "################################################################"
 echo "galculator-gtk2"
 echo "################################################################"
 
-packer galculator-gtk2 --noedit
+packer galculator-gtk2 --noedit --noconfirm
 
 
 ######## D E V E L O P M E N T #########
@@ -64,7 +64,7 @@ echo "################################################################"
 
 #packer sublime-edit --noedit
 
-packer sublime-text-dev --noedit
+packer sublime-text-dev --noedit --noconfirm
 
 ######## E D U C A T I O N     #########
 
@@ -76,7 +76,7 @@ echo "################################################################"
 echo "archlinux logo's"
 echo "################################################################"
 
-packer archlinux-artwork --noedit
+packer archlinux-artwork --noedit --noconfirm
 
 ######## I N T E R N E T       #########
 
@@ -84,13 +84,13 @@ echo "################################################################"
 echo "google chrome"
 echo "################################################################"
 
-packer google chrome --noedit
+packer google chrome --noedit --noconfirm
 
 echo "################################################################"
 echo "lastpass"
 echo "################################################################"
 
-packer lastpass --noedit
+packer lastpass --noedit --noconfirm
 
  ######## M U L T I M E D I A   #########
 
@@ -98,13 +98,13 @@ echo "################################################################"
 echo "spotify"
 echo "################################################################"
 
-packer spotify  --noedit
+packer spotify  --noedit --noconfirm
 
 echo "################################################################"
 echo "kazam"
 echo "################################################################"
 
-packer kazam --noedit
+packer kazam --noedit --noconfirm
 
 ######## O F F I C E           #########
 
@@ -112,14 +112,14 @@ echo "################################################################"
 echo "focuswriter"
 echo "################################################################"
 
-packer focuswriter --noedit
+packer focuswriter --noedit --noconfirm
 
 
 echo "################################################################"
 echo "masterpdfeditor"
 echo "################################################################"
 
-packer masterpdfeditor --noedit
+packer masterpdfeditor --noedit --noconfirm
 
 
 
@@ -130,7 +130,7 @@ packer masterpdfeditor --noedit
 
 #packer ultra-flat-icons --noedit
 #packer evopop-icon-theme-git  --noedit
-packer numix-circle-icon-theme  --noedit
+packer numix-circle-icon-theme  --noedit --noconfirm
 #git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
 #git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
@@ -140,7 +140,7 @@ packer numix-circle-icon-theme  --noedit
 #packer zukitwo-themes  --noedit
 #packer omg-suite --noedit
 #packer vertex-themes-git --noedit
-packer numix-themes-archblue --noedit
+packer numix-themes-archblue --noedit --noconfirm
 #packer ceti-3.14-theme --noedit
 #packer zoncolor-themes-pack --no-edit
 
@@ -162,7 +162,7 @@ echo "################################################################"
 echo "xcursor-menda-git"
 echo "################################################################"
 
-packer xcursor-menda-git --noedit
+packer xcursor-menda-git --noedit --noconfirm
 #packer xcursor-simpleandsoft --noedit
 
         # W A L L P A P E R #
@@ -173,7 +173,7 @@ echo "################################################################"
 echo "variety - You have to do one more action to make it work"
 echo "################################################################"
 
-packer variety --noedit
+packer variety --noedit --noconfirm
 
 
 
@@ -186,13 +186,13 @@ echo "################################################################"
 echo "dropbox"
 echo "################################################################"
 
-packer dropbox --noedit
+packer dropbox --noedit --noconfirm
 
 echo "################################################################"
 echo "copy-agent"
 echo "################################################################"
 
-packer copy-agent --noedit
+packer copy-agent --noedit --noconfirm
 
 
 
@@ -204,7 +204,7 @@ echo "################################################################"
 echo "playerctl"
 echo "################################################################"
 
-packer playerctl --noedit
+packer playerctl --noedit --noconfirm
 
 # screenart for hardware and software
 
@@ -212,13 +212,13 @@ echo "################################################################"
 echo "alsi"
 echo "################################################################"
 
-packer alsi --noedit
+packer alsi --noedit --noconfirm
 
 echo "################################################################"
 echo "screenfo"
 echo "################################################################"
 
-packer screenfo --noedit
+packer screenfo --noedit --noconfirm
 
 # if you want a program that tells to update
 # or just type sudo pacman -Syu when you feel like it
@@ -239,8 +239,8 @@ echo "ttf-ms-fonts"
 echo "################################################################"
 
 packer ttf-ms-fonts --noedit
-#packer hermit --noedit
-#packer terminess-powerline-font --noedit
+#packer hermit --noedit --noconfirm
+#packer terminess-powerline-font --noedit --noconfirm
 
 echo "################################################################"
 echo "font-manager"
@@ -254,8 +254,8 @@ packer font-manager  --noedit
 # activate multilib in the pacman.conf
 # packer teamviewer  --noedit
 # packer usb-creator --noedit
-packer imagewriter --noedit
-packer isousb --noedit
+packer imagewriter --noedit --noconfirm
+packer isousb --noedit --noconfirm
 # if using pamac you need some kind of policy kit to grant permission for updating
 # sudo pacman -S polkit
 # packer xfce-polkit-git --noedit
@@ -268,7 +268,7 @@ packer isousb --noedit
         # N E T W O R K 
 
 
-packer  slurm --noedit
+packer  slurm --noedit --noconfirm
 
 
 
@@ -282,8 +282,8 @@ echo "################################################################"
 echo "sane"
 echo "################################################################"
 
-packer sane --noedit
-packer simple-scan 
+packer sane --noedit --noconfirm
+packer simple-scan  --noedit --noconfirm
 
 # edit following file dll.conf and uncomment line with #hpaio
 # This is my current network printer hp aio photosmart 7520

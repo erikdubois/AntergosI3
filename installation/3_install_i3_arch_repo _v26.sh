@@ -38,15 +38,15 @@
 
 ######## A C C E S S O R I E S #########
 
-sudo pacman -S terminator 
+sudo pacman -S terminator --noconfirm
 
-sudo pacman -S unclutter ristretto
+sudo pacman -S unclutter ristretto --noconfirm
 
-sudo pacman -S notify-osd
+sudo pacman -S notify-osd --noconfirm
 
-sudo pacman -S xfce4-screenshooter xfce4-appfinder xfce4-power-manager
+sudo pacman -S xfce4-screenshooter xfce4-appfinder xfce4-power-manager --noconfirm
 
-sudo pacman -S evince
+sudo pacman -S evince --noconfirm
 
 # if you need to edit which extension goes with which program
 # sudo pacman -S mime-editor
@@ -61,27 +61,27 @@ sudo pacman -S evince
 
 ######## G R A P H I C S       #########
 
-sudo pacman -S gimp inkscape
-sudo pacman -S gnome-font-viewer
+sudo pacman -S gimp inkscape --noconfirm
+sudo pacman -S gnome-font-viewer --noconfirm
 
 ######## I N T E R N E T       #########
 
-sudo pacman -S firefox flashplugin transmission-gtk hexchat
-sudo pacman -S filezilla
+sudo pacman -S firefox flashplugin transmission-gtk hexchat --noconfirm
+sudo pacman -S filezilla --noconfirm
 
 # activate multilib in the pacman.conf
 # sudo pacman -S skype
 
 ######## M U L T I M E D I A   #########
 
-sudo pacman -S vlc 
+sudo pacman -S vlc  --noconfirm
 #sudo pacman -S clementine
-sudo pacman -S shotwell
+sudo pacman -S shotwell --noconfirm
 
 
 ######## O F F I C E           #########
 
-sudo pacman -S geary
+sudo pacman -S geary --noconfirm
 
 
 ######## S E T T I N G S       #########
@@ -89,19 +89,19 @@ sudo pacman -S geary
        # T H E M I N G #
 
 # Theme, icons, borders, cursors
-sudo pacman -S lxappearance
+sudo pacman -S lxappearance --noconfirm
 #sudo packer -S lxappearance2-git
-sudo pacman -S oxygen-cursors
+sudo pacman -S oxygen-cursors --noconfirm
 
 # application to choose a wallpaper
-sudo pacman -S nitrogen
+sudo pacman -S nitrogen --noconfirm
 
 # variety wallpaper changer needs feh to change the walls
 # extra changes must be made see folder installation
-sudo pacman -S feh 
+sudo pacman -S feh --noconfirm
 
 # to configure qt4 X11 (spotify submenu's)
-sudo pacman -S qt4
+sudo pacman -S qt4 --noconfirm
 # start the program qtconfig-qt4 
 #choose gtk+
 
@@ -113,14 +113,14 @@ sudo pacman -S qt4
 
 # all kind of tools to get system information
 
-sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances 
-sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances --noconfirm
+sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo --noconfirm
 numlockx on
 
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
 # and set them the right way
 
-sudo pacman -S xorg-xrandr
+sudo pacman -S xorg-xrandr --noconfirm
 
 # monitor the GB/TB of your harddisk
 # sudo pacman -S baobab
@@ -130,20 +130,20 @@ sudo pacman -S xorg-xrandr
 
 # download statistics
 
-sudo pacman -S vnstat 
+sudo pacman -S vnstat  --noconfirm
 systemctl enable vnstat
 systemctl start vnstat
 
 # taskmanager if htop and glances is not for you
 
-sudo pacman -S xfce4-taskmanager
+sudo pacman -S xfce4-taskmanager --noconfirm
 
 # download and burn iso
 sudo pacman -S 
 
 # sudo fdisk -l
 # sudo ddrescue -d -D --force your iso.iso /dev/sdx
-sudo pacman -S ddrescue
+sudo pacman -S ddrescue --noconfirm
 
         # S O U N D #
 
@@ -152,35 +152,35 @@ sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugl
 
 # for kazam
 
-sudo pacman -S libsrtp
-sudo pacman -S volumeicon
+sudo pacman -S libsrtp --noconfirm
+sudo pacman -S volumeicon --noconfirm
 
 
         # T H U N A R #
 
 # sudo pacman -S spacefm
-sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman --noconfirm
 
 # if you want  a wastbasket in thunar you better install this
 # or thunar-vfs
-sudo pacman -S gvfs  
+sudo pacman -S gvfs  --noconfirm
 
 # installed via brasero
 # sudo pacman -S gvfs
 
 # better search with catfish and dependancies - in depth string search
-sudo pacman -S catfish findutils mlocate tracker strigi pinot
+sudo pacman -S catfish findutils mlocate tracker strigi pinot --noconfirm
 
 
         # F O N T S #
 #sudo pacman -S ttf-ubuntu-font-family
 #sudo pacman -S ttf-droid
 #sudo pacman -S ttf-inconsolata
-sudo pacman -S ttf-google-fonts
+sudo pacman -S ttf-google-fonts --noconfirm
 
         # U T I L I T I E S #
 
-sudo pacman -S gnome-disk-utility
+sudo pacman -S gnome-disk-utility --noconfirm
 
         # P R I N T E R #
 
@@ -194,7 +194,7 @@ systemctl start org.cups.cupsd.service
 # if you want a networkmanager and applet mostly for laptop/wireless as
 # lan just works and gives no added value
 
-sudo pacman -S networkmanager
+sudo pacman -S networkmanager --noconfirm
 
 # set nm-applet to run at boot in the config file
 
