@@ -369,7 +369,9 @@ It is a choice you have to make. You can take a look at the pictures above how i
 
 	./7_i3-with-gaps_v26.sh
 
-Now open the file config-gaps and copy/paste these lines at the top of your config file and change to your liking.
+Now open the file <b>config-gaps</b> and copy/paste these lines at the top of your own config file and change to your liking.
+
+WIN + SHIFT + R to reload your new config file or reboot
 
 
 
