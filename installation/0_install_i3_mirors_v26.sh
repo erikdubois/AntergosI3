@@ -46,6 +46,10 @@
 # https://wiki.archlinux.org/index.php/Solid_State_Drives#Enable_TRIM_by_Mount_Flags
 # sudo fstrim -v / and /home
 
+echo "################################################################"
+echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
+echo "################################################################"
+
 
 # installing refector to test wich servers are fastest
 sudo pacman -S reflector --noconfirm
