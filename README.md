@@ -309,6 +309,11 @@ Choosing fonts and size of them can be done with the program qtconfig-qt4. Press
 	qtconfig-qt4
 
 
+#16. Config file
+
+Check <b>config</b> file in .i3 to see all the settings and more explanations.
+
+
 # xx. Gaps or no gaps 
 
 Additional i3-gaps - not needed
