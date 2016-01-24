@@ -246,7 +246,7 @@ echo "################################################################"
 echo "font-manager"
 echo "################################################################"
 
-packer font-manager  --noedit
+packer font-manager  --noedit --noconfirm
 
 
         # U T I L I T I E S #
