@@ -333,6 +333,25 @@ That will work on Antergos as well.
 You can uncomment the feh line in the get_wallpaper as well.
 
 
+#18. Geary
+
+Geary is a small mail client I use to connect to my gmail account.
+
+At the moment geary is victim of some kind of bug but we can fix it.
+
+Make a new file in this location
+
+~/.config/gtk-3.0/gtk.css
+
+Edit this file and copy/paste this code inside:
+
+    .window-frame {
+        box-shadow: none;
+        margin: 1;
+    }
+
+Reboot
+
 
 # Extra 1. Autoboot into i3
 
