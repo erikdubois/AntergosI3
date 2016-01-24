@@ -19,6 +19,8 @@ https://i3wm.org/
 
 # What can you achieve?
 
+There is a fork where you can choose to have gaps between the windows.
+
 Yltra Flat Orange on Antergos I3
 Icons can be found at github
 https://github.com/erikdubois/Yltra-Flat - with gaps
