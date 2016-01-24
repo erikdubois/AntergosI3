@@ -210,7 +210,7 @@ In this script there are more solution to known problems. They are added as comm
 If the choice comes up between choosing xf86-input-evdev and xf86-input-libinput, choose the first one.
 
 This will install the actual i3 windows manager and xorg to render it. We will also make sure yaourt is installed. It is an option in Antergos base installation screens.
-Yaourt is used to install <b>packer</b>>. Packer will serve as the aur helper from there on.
+Yaourt is used to install <b>packer</b>. Packer will serve as the aur helper from there on.
 
 
 
