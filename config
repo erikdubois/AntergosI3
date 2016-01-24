@@ -271,9 +271,10 @@ assign [class="Firefox"]          → 1
 assign [class="sublime-text"]     → 2
 assign [class="sublime_text"]     → 2
 assign [class="Subl3"]            → 2
-assign [class="Thunar"]           → 8
-assign [class="Geary"]            → 9
-assign [class="Spotify"]          → 10
+assign [class="Spotify"]          → 6
+assign [class="Thunar"]           → 7
+assign [class="Geary"]            → 8
+
 
 for_window [class="Firefox"] focus
 
