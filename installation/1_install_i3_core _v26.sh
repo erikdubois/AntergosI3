@@ -37,7 +37,7 @@
 #
 #======================================================================================
 
-# Made to be installed on a clean Arch (wiki arch beginners guide part 1)
+# Made to be installed on a clean Antergos (wiki arch beginners guide part 1)
 # no desktop environment, no display manager - directly on X11
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
