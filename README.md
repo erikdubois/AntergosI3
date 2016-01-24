@@ -301,6 +301,8 @@ You can use the program lxappearance to change these settings
 
 Type WIN + D  and choose lxappearance and press enter.
 
+	lxappearance
+
 
 #15. Choose fonts
 
@@ -313,8 +315,10 @@ Choosing fonts and size of them can be done with the program qtconfig-qt4. Press
 
 Check <b>config</b> file in .i3 to see all the settings and more explanations.
 
+# Extra 1. Autoboot into i3
 
-# xx. Gaps or no gaps 
+
+# Extra 2. Gaps or no gaps 
 
 Additional i3-gaps - not needed
 
@@ -325,17 +329,6 @@ It is a choice you have to make. You can take a look at the pictures above how i
 
 
 	./7_i3-with-gaps_v26.sh
-
-
-
-# xx. autoboot into i3
-
-
-
-
-
-<h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
-
 
 
 
@@ -368,8 +361,12 @@ win + pause/break = let you suspend,hibernate, reboot and quit
 All shortcuts are kept in one file : "config"
 You do well to read this file.
 
-lxappearance is the first program I use to change themes, fonts, icons.
+lxappearance and qtconfig-qt4 are the first programs I use to change themes, fonts, icons.
 
+
+
+
+<h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
 
 
 
