@@ -376,10 +376,6 @@ WIN + SHIFT + R to reload your new config file or reboot
 
 
 
-# Reboot  N  O  W
-
-
-
 
 # First use and tips
 
