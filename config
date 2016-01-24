@@ -256,6 +256,7 @@ bindsym button8 move right
 
 
 ## Assign section
+# you can find the class with the program xprop
 assign [class="Firefox"]          → 1
 assign [class="sublime-text"]     → 2
 assign [class="sublime_text"]     → 2
