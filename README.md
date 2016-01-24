@@ -334,6 +334,24 @@ You can uncomment the feh line in the get_wallpaper as well.
 
 # Extra 1. Autoboot into i3
 
+Normally you end in a black screen where you are asked to give your login and password.
+
+Since this computer is only used by me, I want to save some time in booting.
+
+Remark: You can stop your computer afterwards with a shutdown command or via the start/stop button of your pc.
+
+
+Following the article on 
+https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
+
+
+    sudo systemctl edit getty@tty1
+
+Type this content inside and CTRL +X to save.
+
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin username --noclear %I $TERM
 
 
 
