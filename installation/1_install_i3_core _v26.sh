@@ -83,7 +83,7 @@ echo "################################################################"
 # change to SigLevel   = Never 
 
 
-sudo pacman -S i3-wm i3lock i3status 
+sudo pacman -S i3-wm i3lock i3status --noconfirm
 
 # Standard Menu system for i3
 # sudo pacman -S dmenu
@@ -118,7 +118,7 @@ echo "################################################################"
 echo "packer"
 echo "################################################################"
 
-yaourt packer --noedit --noconfirm
+yaourt packer --noconfirm
 
 
 
@@ -155,7 +155,7 @@ echo "################################################################"
 echo "j4-dmenu-desktop-git"   
 echo "################################################################"
 
-packer j4-dmenu-desktop-git   --noedit
+packer j4-dmenu-desktop-git   --noedit --noconfirm
 
 # alternative menu for i3 with larger fonts and font choice 
 
@@ -163,7 +163,7 @@ echo "################################################################"
 echo "dmenu-xft for bigger fonts - Remove dmenu -- yes"
 echo "################################################################"
 
-packer dmenu-xft-mouse-height-fuzzy-history --noedit
+packer dmenu-xft-mouse-height-fuzzy-history --noedit --noconfirm
 
 # alternative information bar
 
@@ -171,7 +171,7 @@ echo "################################################################"
 echo "i3 blocks"
 echo "################################################################"
 
-packer i3blocks --noedit
+packer i3blocks --noedit --noconfirm
 
 
 echo "################################################################"
