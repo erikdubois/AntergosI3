@@ -60,6 +60,13 @@ sudo reflector -l 50 -f 20 --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/m
 # fixing the fastest antergos servers
 sudo rankmirrors -n 0 /etc/pacman.d/antergos-mirrorlist /tmp/antergos-mirrorlist && sudo cp /tmp/antergos-mirrorlist /etc/pacman.d
 
+echo "################################################################"
+echo "####                   U P D A T I N G                       ###"
+echo "################################################################"
+
+
+sudo pacman -Syuu
+
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
