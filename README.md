@@ -1,7 +1,10 @@
 # Antergos + i3 windows manager
 
 
-This is my configuration for I3 improved tiling to be used on any Antergos linux distribution.
+This is my configuration for I3 improved tiling to be used on Antergos.
+
+https://antergos.com/
+http://forum.antergos.com/
 
 In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a desktop environment.
 
