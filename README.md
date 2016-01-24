@@ -322,7 +322,7 @@ Check <b>config</b> file in .i3 to see all the settings and more explanations.
 
 If you have transparent terminals and also if you use gaps in i3, it makes sense to have a wallpaper changer like variety.
 
-You will have to edit one file and delete some lines and you will have a GREAT working wallpaper with many sources but most importantly from desktopr.
+You will have to edit one (or two) file(s) and delete some lines and you will have a GREAT working wallpaper with many sources but most importantly from desktopr.
 
 Follow the dirty solution in my article :
 
