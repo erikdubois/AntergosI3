@@ -176,6 +176,7 @@ packer i3blocks --noedit
 
 echo "################################################################"
 echo "one more script and you can test i3 with startx"
+echo "no software what so ever - it will try to start firefox, ..."
 echo "################################################################"
 
 
