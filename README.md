@@ -265,15 +265,17 @@ In the script you will see a text to know which one you need to choose.
 
 #11. More colour to your terminal use zsh
 
-
-
     ./5_zsh_vx.sh
+
+
 
 #12. Samba to share between computers
 
 The smb script is to install samba or the way to share folders and files between computers if you need it.
 
     ./6_smb_vx.sh
+
+
 
 #13. Single or Dual monitor
 
@@ -292,6 +294,12 @@ There is also a script included that might help. That is now commented out. This
 
 	dualscreen_autoset.sh
 
+
+#14. Choose icons and themes
+
+You can use the program lxappearance to change these settings
+
+Type WIN + D  and choose lxappearance and press enter.
 
 
 
