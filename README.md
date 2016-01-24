@@ -323,15 +323,18 @@ If you have transparent terminals and also if you use gaps in i3, it makes sense
 You will have to edit one file and delete some lines and you will have a GREAT working wallpaper with many sources but most importantly from desktopr.
 
 Follow the dirty solution in my article :
+
 http://erikdubois.be/how-to-make-variety-work-in-i3-windows-manager-linux-mint-17-3/
 
 That will work on Antergos as well.
 
-
+You can uncomment the feh line in the get_wallpaper as well.
 
 
 
 # Extra 1. Autoboot into i3
+
+
 
 
 # Extra 2. Gaps or no gaps 
