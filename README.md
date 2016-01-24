@@ -349,7 +349,7 @@ Edit this file and copy/paste this code inside:
 
     .window-frame {
         box-shadow: none;
-        margin: 1;
+        margin: 0;
     }
 
 https://github.com/shimmerproject/Numix/issues/206
