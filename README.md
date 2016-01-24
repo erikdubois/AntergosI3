@@ -350,6 +350,8 @@ Edit this file and copy/paste this code inside:
         margin: 1;
     }
 
+https://github.com/shimmerproject/Numix/issues/206
+
 Reboot
 
 
