@@ -140,7 +140,7 @@ Change this to
 Save and exit with CTRL + X.
 
 
-#3. Get all the files
+#3. Get the files from github
 
 The idea is to download (if you have internet connection) the i3 github files. In my case I had internet connection straight after installing the base system and git was installed as well:
 
