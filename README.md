@@ -225,7 +225,7 @@ With WINDOWS + SHIFT + E you exit i3 again.
 
 This script is my idea to have all my data in one folder i.e. .i3. I made symbolic links to files. I did notice that this is not so easy with the gtk files. The scripts makes backup files.
 
-The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need. these links will be made as well. Zsh will be installed in a later script if you want it.
+The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need. These links will be made as well. Zsh will be installed in a later script if you want it.
 
 
 
