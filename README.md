@@ -339,6 +339,8 @@ Geary is a small mail client I use to connect to my gmail account.
 
 At the moment geary is victim of some kind of bug but we can fix it.
 
+We get a wide black border around geary in i3.
+
 Make a new file in this location
 
 ~/.config/gtk-3.0/gtk.css
