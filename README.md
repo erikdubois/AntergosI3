@@ -65,7 +65,7 @@ I started following the guide of
 
 https://wiki.archlinux.org/index.php/Beginners%27_guide
 
-After this base installation you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
+After choosing the base installation during installation of Antergos, you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
 
 Good options are
 
