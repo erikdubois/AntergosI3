@@ -275,7 +275,7 @@ assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
 assign [class="Thunar"]           → 7
-assign [class="Geary"]            → 8
+#assign [class="Geary"]            → 8
 
 
 for_window [class="Firefox"] focus
@@ -344,7 +344,7 @@ exec pamac-tray
 exec firefox
 #exec subl      # version 2
 exec subl3      # version 3
-exec geary
+#exec geary
 exec spotify
 exec thunar
 
@@ -359,7 +359,7 @@ bindsym $mod+Shift+Return exec thunar
 
 #mod1 = ALT
 bindsym control+mod1+f exec firefox 
-bindsym control+mod1+g exec geary
+#bindsym control+mod1+g exec geary
 bindsym control+mod1+s exec spotify
 #bindsym control+mod1+t exec subl
 bindsym control+mod1+t exec subl3
