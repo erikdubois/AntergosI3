@@ -37,6 +37,13 @@ no gaps
 ![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
 
 
+with gaps
+![Screenshots](http://i.imgur.com/N9sNc4m.jpg)
+
+
+no gaps
+![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
+
 
 #What can you do if the script does not execute?
 
