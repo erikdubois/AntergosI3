@@ -263,7 +263,7 @@ In the script you will see a text to know which one you need to choose.
 
     ./5_zsh_vx.sh
 
-Zsh is a "nicer" shell than our bash shell and then there is oh-my-sh that help make your terminal look "really cool".
+Zsh is a "nicer" shell than our bash shell and then there is oh-my-zsh that help make your terminal look "really cool".
 
 More info on
 
