@@ -1,6 +1,5 @@
 # Antergos + i3 windows manager
 
-# STILL TESTING BETA PHASE
 
 This is my configuration for I3 improved tiling to be used on any Antergos linux distribution.
 
