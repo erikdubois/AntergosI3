@@ -238,7 +238,7 @@ echo "################################################################"
 echo "ttf-ms-fonts"
 echo "################################################################"
 
-packer ttf-ms-fonts --noedit
+packer ttf-ms-fonts --noedit --noconfirm
 #packer hermit --noedit --noconfirm
 #packer terminess-powerline-font --noedit --noconfirm
 
