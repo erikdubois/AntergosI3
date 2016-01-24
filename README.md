@@ -269,8 +269,27 @@ The smb script is to install samba or the way to share folders and files between
 
     ./6_smb_vx.sh
 
+#13. Single or Dual monitor
 
-# 13. Gaps or no gaps 
+In the config file of i3 I declared the names of my monitors.
+You can find out your names with
+
+	xrandr
+
+Uncomment or comment these lines.
+
+	set $firstMonitor DVI-I-1
+	set $secondMonitor DVI-I-2
+
+There is also a script included that might help. That is now commented out. This is to tell the system which screen should be on the left and which one on the right.
+
+
+	dualscreen_autoset.sh
+
+
+
+
+# xx. Gaps or no gaps 
 
 Additional i3-gaps - not needed
 
@@ -283,7 +302,8 @@ It is a choice you have to make. You can take a look at the pictures above how i
 	./7_i3-with-gaps_v26.sh
 
 
-# 14. autoboot into i3
+
+# xx. autoboot into i3
 
 
 
