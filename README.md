@@ -369,6 +369,8 @@ It is a choice you have to make. You can take a look at the pictures above how i
 
 	./7_i3-with-gaps_v26.sh
 
+Now open the file config-gaps and copy/paste these lines at the top of your config file and change to your liking.
+
 
 
 
