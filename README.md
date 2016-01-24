@@ -283,6 +283,11 @@ It is a choice you have to make. You can take a look at the pictures above how i
 	./7_i3-with-gaps_v26.sh
 
 
+# 14. autoboot into i3
+
+
+
+
 
 <h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
 
