@@ -388,8 +388,10 @@ bindsym $mod+Pause mode "$mode_system"
 
 
 # Screen Shots
-bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S').png
-
+# png
+# bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S').png
+# jpeg
+bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/'
 
 
 
