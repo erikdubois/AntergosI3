@@ -263,6 +263,12 @@ In the script you will see a text to know which one you need to choose.
 
     ./5_zsh_vx.sh
 
+Zsh is a "nicer" shell than our bash shell and then there is oh-my-sh that help make your terminal look "really cool".
+
+More info on
+
+https://github.com/robbyrussell/oh-my-zsh
+
 
 
 #12. Samba to share between computers
