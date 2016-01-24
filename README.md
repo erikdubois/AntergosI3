@@ -170,30 +170,34 @@ Know that there are also hidden files as well.
 
     ls -al       
 
-#5. If problems with servers
-
-Jan 2015 
-Solution
-
-	sudo pacman -S reflector
-	sudo reflector --verbose -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
-	sudo pacman -Syyu
-
-This will create a list with the top 200 fastest servers in your neighbourhood.
 
 
-
-#6. Installation folder
+#5. Installation folder
 
 I run an installation script to quickly  get all my software after <b>the base installation of Antergos</b>. For me this was quite a learning process, since I was a Redhat, Ubuntu, Linux Mint kind of guy over the last two decades. 
 
-
-Then you can start running the below mentioned script to be found in the folder installation.
-
 I decided to split the logical entities in seperate files. Better to debug and better for users to understand.
 
-The scripts have been numbered from 1 to 6. Follow the orderering to install all programs.
+The scripts have been numbered from 0 to 7. Follow the order to install all programs.
 
+
+
+#6. If problems with servers
+
+Jan 2016
+
+	cd .i3
+	cd installation
+    ls -al
+
+	./0_install_i3_mirors_vx.sh
+
+This will create a list with the fastest servers in your neighbourhood for arch and antergos servers.
+In this script there are more solution to known problems. They are added as comments.
+
+
+
+#7. Installing I3
 
   
     cd installation
@@ -205,10 +209,28 @@ The scripts have been numbered from 1 to 6. Follow the orderering to install all
 
 If the choice comes up between choosing xf86-input-evdev and xf86-input-libinput, choose the first one.
 
-This will install the actual i3 windows manager and xorg to render it. We will also make sure yaourt is installed. Yaourt is used to install <b>packer</b>>. Packer will serve as the aur helper from there on.
+This will install the actual i3 windows manager and xorg to render it. We will also make sure yaourt is installed. It is an option in Antergos base installation screens.
+Yaourt is used to install <b>packer</b>>. Packer will serve as the aur helper from there on.
 
-Beware when you say "Y" or "N" to the questions.
 
+
+#8. Making links
+
+
+	./2_keep_all_here_vx.sh
+
+I have moved this script to the beginning. You can now test i3 already.
+You can have a first peak at i3 by starting it with startx. It is not recommended as there is no software yet.
+With WINDOWS + SHIFT + E you exit i3 again.
+
+This script is my idea to have all my data in one folder i.e. .i3. I made symbolic links to files. I did notice that this is not so easy with the gtk files. The scripts makes backup files.
+
+The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need. these links will be made as well. Zsh will be installed in a later script if you want it.
+
+
+
+
+#9. Installation of software from Antergos/Archlinux repo's
 
 
     ./2_install_i3_Antergos_repo _v1
@@ -218,9 +240,13 @@ This will install all programs coming from the "normal" Antergos repositories wi
 
 
 
+#10. Installation of software coming from AUR or community
+
     ./3_install_i3_aur_repo _vx.sh
 
-This will install all programs coming from the AUR repositories.
+This will install all programs coming from the AUR repositories with the use of packer.
+
+You will have to decide which version you want. I would recommend the highest and most recent.
 
 If you see a program, you do not want. Just press ENTER and no number and it will be skipped.
 In the script you will see a text to know which one you need to choose.
@@ -231,20 +257,27 @@ In the script you will see a text to know which one you need to choose.
     echo "sane"
     echo "################################################################"
 
-When that is done you run
+#11. More colour to your terminal use zsh
 
-	./4_keep_all_here_vx.sh
 
-The last script is my idea to have all my data in one folder. So I make some symbolic links to them. I did notice that this is not so easy with the gtk files. The scripts makes backup files.
-
-The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need.
 
     ./5_zsh_vx.sh
+
+#12. Samba to share between computers
 
 The smb script is to install samba or the way to share folders and files between computers if you need it.
 
     ./6_smb_vx.sh
 
+
+# 13. EXTRA i3-gaps
+
+You can not have i3 and i3-gaps.
+
+It is a choice you have to make. 
+
+
+	./7_i3-with-gaps_v26.sh
 
 
 
