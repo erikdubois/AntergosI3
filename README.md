@@ -63,7 +63,7 @@ That's why I have written a script to do just that.
 
 I started following the guide of 
 
-https://wiki.Antergoslinux.org/index.php/Beginners%27_guide
+https://wiki.archlinux.org/index.php/Beginners%27_guide
 
 After this base installation you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
 
