@@ -40,18 +40,22 @@
 ########################################
 # This file is an attempt to keep all necessary information on github
 # for easy installation on an other computer
-# Copy/paste line per line in terminal
-
 
 # depending on how far you are in your installation some of these files
 # will not yet exist - you can not remove what is not there
 # ignore the errors
 
+# if backups folder does not exist - make one
+#[ -d "~/.backups" ] || mkdir -p $HOME/".backups"
 
+# now
+curtime=$(date +"%Y_%m_%d_%H_%M_%S")
 			# I 3  B L O C K S #
 
 # use of i3blocks for bar 
 
+cp ~/.i3blocks.conf ~/.backups/".i3blocks.conf.backup.$curtime"
+rm ~/.i3blocks.conf
 ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
 
 			# L X  A P P E A R A N C E #
@@ -60,25 +64,25 @@ ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
 # these files can be found in the installation folder
 # making links does not seem to work - they are overwritten when changing the look
 
-cp ~/.gtkrc-2.0 ~/.gtkrc-2.0_backup
+cp ~/.gtkrc-2.0 ~/.backups/".gtkrc-2.0_backup.$curtime"
 rm ~/.gtkrc-2.0
 ln -s ~/.i3/.gtkrc-2.0 ~/.gtkrc-2.0 
 
-cp ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini_backup
+cp ~/.config/gtk-3.0/settings.ini ~/.config/gtk-3.0/"settings.ini_backup.$curtime"
 rm ~/.config/gtk-3.0/settings.ini
 ln -s ~/.i3/settings.ini ~/.config/gtk-3.0/settings.ini
 
 
 			#  Z S H #
-cp ~/.zshrc ~/.zshrc_backup
+cp ~/.zshrc ~/.backups/".zshrc_backup.$curtime"
 rm ~/.zshrc
 ln -s ~/.i3/.zshrc ~/.zshrc
 
-cp ~/.zlogin ~/.zlogin_backup
+cp ~/.zlogin ~/.backups/".zlogin_backup.$curtime"
 rm ~/.zlogin
 ln -s ~/.i3/.zlogin ~/.zlogin
 
-cp ~/.zprofile ~/.zprofile_backup
+cp ~/.zprofile ~/.backups/".zprofile_backup.$curtime"
 rm ~/.zprofile
 ln -s ~/.i3/.zprofile ~/.zprofile
 
@@ -86,7 +90,7 @@ ln -s ~/.i3/.zprofile ~/.zprofile
 
 			# X I N I T R C #
 
-cp ~/.xinitrc ~/.xinitrc_backup
+cp ~/.xinitrc ~/.backups/".xinitrc_backup.$curtime"
 rm ~/.xinitrc
 ln -s ~/.i3/.xinitrc ~/.xinitrc
 
@@ -95,7 +99,7 @@ ln -s ~/.i3/.xinitrc ~/.xinitrc
 			# B A S H R C #
 
 #obsolete if you use zsh
-cp ~/.bashrc ~/.bashrc_backup
+cp ~/.bashrc ~/.backups/".bashrc_backup.$curtime"
 rm ~/.bashrc
 ln -s ~/.i3/.bashrc ~/.bashrc
 
