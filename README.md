@@ -213,7 +213,10 @@ In this script I included also the line to start dhcpd otherwise you will not ha
 	sudo systemctl enable dhcpcd@service
 
 
+no internet on lan, try these
 
+    sudo systemctl enable dhcpcd
+    sudo systemctl start dhcpcd
 
 
 #8. Making links
@@ -534,3 +537,16 @@ For now if this happens, you should apply this code in the terminal and add the 
 Then you can execute it by typing
 
     ./typeyourfilename
+
+
+# Antergos installation problems
+
+If during installation cnchi gives you trouble.
+
+From github :
+From the ISO, close Cnchi and run this commands from a terminal:
+sudo pacman -S git
+sudo rm -rf /usr/share/cnchi
+git clone https://github.com/Antergos/cnchi --depth=1
+cd cnchi
+./run﻿
