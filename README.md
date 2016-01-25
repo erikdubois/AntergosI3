@@ -397,6 +397,8 @@ Now open the file <b>config-gaps</b> and copy/paste these lines at the top of yo
 WIN + SHIFT + R to reload your new config file or reboot
 
 
+# Extra 3. Firefox Well, this is embarrassing
+
 
 
 
