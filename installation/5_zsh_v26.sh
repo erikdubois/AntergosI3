@@ -35,7 +35,8 @@ echo "################################################################"
 echo "installing zsh-completions"
 echo "################################################################"
 
-packer zsh-completions --noedit --noconfirm
+pacman zsh-completions zsh-syntax-highlighting --noconfirm
+
 
 
 # Installation of OH-MY-ZSH from the github (best way to install!!)
