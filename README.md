@@ -414,6 +414,11 @@ Look for these two lines - just type in the first parts
 
     browser.sessionstore.max_resumed_crashes from 0 to 1
 
+# Extra 4. Matrix
+
+This is just for fun. Matrix look.
+
+    sudo pacman -S cmatrix
 
 
 
