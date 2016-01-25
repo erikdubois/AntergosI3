@@ -399,6 +399,21 @@ WIN + SHIFT + R to reload your new config file or reboot
 
 # Extra 3. Firefox Well, this is embarrassing
 
+Our computer stops so fast that Firefox thinks it crashed. 
+
+So "stop firefox from saying well this is embarrasing"
+
+Type in the url:
+
+    about:config
+
+Look for these two lines - just type in the first parts
+
+
+    browser.sessionstore.resume_from_crash  from true to false
+
+    browser.sessionstore.max_resumed_crashes from 0 to 1
+
 
 
 
