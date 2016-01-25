@@ -64,13 +64,23 @@ sudo cp mount_harddisk_rule/49-nopasswd_global.rules /etc/polkit-1/rules.d/49-no
 
 
 
+
+echo "################################################################"
+echo "thunar"
+echo "################################################################"
+
+[ -d "~/.config/Thunar" ] || mkdir -p $HOME/".config/Thunar"
+cp thunar/configure_custom_actions/uca.xml ~/.config/Thunar/
+
+
+
 echo "################################################################"
 echo "terminator"
 echo "################################################################"
 
 [ -d "~/.config/terminator" ] || mkdir -p $HOME/".config/terminator"
 sudo cp terminator/config ~/.config/terminator/
-cp thunar/configure_custom_actions/uca.xml ~/.config/Thunar/
+
 
 
 
