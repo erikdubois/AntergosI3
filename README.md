@@ -360,6 +360,15 @@ https://github.com/shimmerproject/Numix/issues/206
 Reboot
 
 
+# 19. The links from step 4 are really important
+
+When you see you are missing icons, spotify opens on wrong page and other stuff, you need to run this script once more to make backups of the files and replace them with links to your .i3 folder files.
+
+
+    ./2_keep_all_here_vx.sh
+
+
+
 # Extra 1. Autoboot into i3
 
 Normally you end in a black screen where you are asked to give your login and password.
