@@ -420,6 +420,16 @@ This is just for fun. Matrix look.
 
     sudo pacman -S cmatrix
 
+# Extra 5. Pacman.conf
+
+You can have a little pacman showing when you download software.
+Definitely fun.
+Beware it is in a crucial file
+
+Open /etc/pacman.conf
+Find the options and add the text
+ILoveCandy
+
 
 
 # First use and tips
