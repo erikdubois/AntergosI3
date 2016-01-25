@@ -88,6 +88,8 @@ echo "################################################################"
 echo "variety"
 echo "################################################################"
 
+[ -d "~/.config/variety" ] || mkdir -p $HOME/".config/variety"
+[ -d "~/.config/variety/scripts" ] || mkdir -p $HOME/".config/variety/scripts"
 cp variety/scripts/* ~/.config/variety/scripts
 cp variety/variety.conf ~/.config/variety/variety.conf
 
