@@ -42,7 +42,7 @@
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<unique-id>1453704503749286-1</unique-id>
-	<command>terminator --working-directory %d</command>
+	<command>terminator --working-directory %f</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
 	<startup-notify/>
