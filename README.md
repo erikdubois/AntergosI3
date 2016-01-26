@@ -554,6 +554,7 @@ If during installation cnchi gives you trouble.
 
 From github :
 From the ISO, close Cnchi and run this commands from a terminal:
+
     sudo pacman -S git
     sudo rm -rf /usr/share/cnchi
     git clone https://github.com/Antergos/cnchi --depth=1
