@@ -50,6 +50,11 @@ no gaps
 ![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
 
 
+with gaps
+![Screenshots](http://i.imgur.com/wYxi8dI.jpg)
+
+
+
 #What can you do if the script does not execute?
 
 Explained at the bottom.
