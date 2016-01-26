@@ -180,16 +180,7 @@ sudo pacman -S ttf-google-fonts --noconfirm
 
         # U T I L I T I E S #
 
-sudo pacman -S gnome-disk-utility --noconfirm
-
-# if you want a program that tells to update
-# or just type sudo pacman -Syu when you feel like it
-# packer pamac --noedit   # if not on antergos
-# execute pamac-tray in your config of i3
-# install also lxsession to be able to update and install in gui
-# sudo pacman -S lxsession
-
-sudo pacman -S pamac lxsession --noconfirm
+sudo pacman -S gnome-disk-utility shutter --noconfirm
 
         # P R I N T E R #
 
@@ -203,7 +194,7 @@ systemctl start org.cups.cupsd.service
 # if you want a networkmanager and applet mostly for laptop/wireless as
 # lan just works and gives no added value
 
-sudo pacman -S networkmanager --noconfirm
+sudo pacman -S networkmanager network-manager-applet --noconfirm
 
 # set nm-applet to run at boot in the config file
 

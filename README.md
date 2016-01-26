@@ -1,11 +1,8 @@
 # Antergos + i3 windows manager
 
+# STILL TESTING BETA PHASE
 
-This is my configuration for I3 improved tiling to be used on Antergos.
-
-https://antergos.com/
-
-http://forum.antergos.com/
+This is my configuration for I3 improved tiling to be used on any Antergos linux distribution.
 
 In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a desktop environment.
 
@@ -18,8 +15,6 @@ It is really great once you have mastered the most important shortcuts.
 https://i3wm.org/
 
 # What can you achieve?
-
-There is a fork where you can choose to have gaps between the windows.
 
 Yltra Flat Orange on Antergos I3
 Icons can be found at github
@@ -42,17 +37,26 @@ no gaps
 ![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
 
 
-with gaps
-![Screenshots](http://i.imgur.com/N9sNc4m.jpg)
-
-
-no gaps
-![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
-
 
 #What can you do if the script does not execute?
 
-Explained at the bottom.
+Since I sometimes forget to make the script executable, I include here what you can do to solve that.
+
+A script can only run when it is marked as an executable.
+
+    ls -al 
+
+Above code will reveal if a script has an "x". X meaning executable.
+Google "chmod" and "execute" and you will find more info.
+
+For now if this happens, you should apply this code in the terminal and add the file name.
+
+    chmod +x typeyourfilename
+
+Then you can execute it by typing
+
+    ./typeyourfilename
+
 
 
 
@@ -69,9 +73,9 @@ That's why I have written a script to do just that.
 
 I started following the guide of 
 
-https://wiki.archlinux.org/index.php/Beginners%27_guide
+https://wiki.Antergoslinux.org/index.php/Beginners%27_guide
 
-After choosing the <b>base installation </b> during installation of Antergos, you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
+After this base installation you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
 
 Good options are
 
@@ -213,10 +217,7 @@ In this script I included also the line to start dhcpd otherwise you will not ha
 	sudo systemctl enable dhcpcd@service
 
 
-no internet on lan, try these
 
-    sudo systemctl enable dhcpcd
-    sudo systemctl start dhcpcd
 
 
 #8. Making links
@@ -266,12 +267,6 @@ In the script you will see a text to know which one you need to choose.
 
     ./5_zsh_vx.sh
 
-Zsh is a "nicer" shell than our bash shell and then there is oh-my-zsh that help make your terminal look "really cool".
-
-More info on
-
-https://github.com/robbyrussell/oh-my-zsh
-
 
 
 #12. Samba to share between computers
@@ -320,76 +315,7 @@ Choosing fonts and size of them can be done with the program qtconfig-qt4. Press
 
 Check <b>config</b> file in .i3 to see all the settings and more explanations.
 
-
-#17. variety 
-
-If you have transparent terminals and also if you use gaps in i3, it makes sense to have a wallpaper changer like variety.
-
-You will have to edit one (or two) file(s) and delete some lines and you will have a GREAT working wallpaper with many sources but most importantly from desktopr.
-
-Follow the dirty solution in my article :
-
-http://erikdubois.be/how-to-make-variety-work-in-i3-windows-manager-linux-mint-17-3/
-
-That will work on Antergos as well.
-
-You can uncomment the feh line in the get_wallpaper as well.
-
-
-#18. Geary
-
-Geary is a small mail client I use to connect to my gmail account.
-
-At the moment geary is victim of some kind of bug but we can fix it.
-
-We get a wide black border around geary in i3.
-
-Make a new file in this location
-
-~/.config/gtk-3.0/gtk.css
-
-Edit this file and copy/paste this code inside:
-
-    .window-frame {
-        box-shadow: none;
-        margin: 0;
-    }
-
-https://github.com/shimmerproject/Numix/issues/206
-
-Reboot
-
-
-# 19. The links from step 4 are really important
-
-When you see you are missing icons, spotify opens on wrong page and other stuff, you need to run this script once more to make backups of the files and replace them with links to your .i3 folder files.
-
-
-    ./2_keep_all_here_vx.sh
-
-
-
 # Extra 1. Autoboot into i3
-
-Normally you end in a black screen where you are asked to give your login and password.
-
-Since this computer is only used by me, I want to save some time in booting.
-
-Remark: You can stop your computer afterwards with a shutdown command or via the start/stop button of your pc.
-
-
-Following the article on 
-https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
-
-
-    sudo systemctl edit getty@tty1
-
-Type this content inside and CTRL +X to save.
-
-    [Service]
-    ExecStart=
-    ExecStart=-/usr/bin/agetty --autologin username --noclear %I $TERM
-
 
 
 # Extra 2. Gaps or no gaps 
@@ -404,43 +330,11 @@ It is a choice you have to make. You can take a look at the pictures above how i
 
 	./7_i3-with-gaps_v26.sh
 
-Now open the file <b>config-gaps</b> and copy/paste these lines at the top of your own config file and change to your liking.
-
-WIN + SHIFT + R to reload your new config file or reboot
 
 
-# Extra 3. Firefox Well, this is embarrassing
 
-Our computer stops so fast that Firefox thinks it crashed. 
+# Reboot  N  O  W
 
-So "stop firefox from saying well this is embarrasing"
-
-Type in the url:
-
-    about:config
-
-Look for these two lines - just type in the first parts
-
-
-    browser.sessionstore.resume_from_crash  from true to false
-
-    browser.sessionstore.max_resumed_crashes from 0 to 1
-
-# Extra 4. Matrix
-
-This is just for fun. Matrix look.
-
-    sudo pacman -S cmatrix
-
-# Extra 5. Pacman.conf
-
-You can have a little pacman showing when you download software.
-Definitely fun.
-Beware it is in a crucial file
-
-Open /etc/pacman.conf
-Find the options and add the text
-ILoveCandy
 
 
 
@@ -473,7 +367,6 @@ lxappearance and qtconfig-qt4 are the first programs I use to change themes, fon
 
 
 <h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
-
 
 
 
@@ -522,40 +415,3 @@ You can do whatever <b>Y O U</b> want.
 
 Share the knowledge.
 ------------------------------------
-
-
-
-
-
-----------------------------------
-#What can you do if the script does not execute?
-
-Since I sometimes forget to make the script executable, I include here what you can do to solve that.
-
-A script can only run when it is marked as an executable.
-
-    ls -al 
-
-Above code will reveal if a script has an "x". X meaning executable.
-Google "chmod" and "execute" and you will find more info.
-
-For now if this happens, you should apply this code in the terminal and add the file name.
-
-    chmod +x typeyourfilename
-
-Then you can execute it by typing
-
-    ./typeyourfilename
-
-
-# Antergos installation problems
-
-If during installation cnchi gives you trouble.
-
-From github :
-From the ISO, close Cnchi and run this commands from a terminal:
-sudo pacman -S git
-sudo rm -rf /usr/share/cnchi
-git clone https://github.com/Antergos/cnchi --depth=1
-cd cnchi
-./run﻿

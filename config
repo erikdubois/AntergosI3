@@ -8,6 +8,23 @@
 # no display managers
 # I borrow from all these distro's to get the applications I feel comfortable with.
 
+###########################################################################
+###################  I 3  G A P S  N E X T   ##############################
+###########################################################################
+# Settings for I3 next gap git
+# https://github.com/Airblader/i3/tree/gaps-next
+# Archlinux via aur installation
+# http://dotx.me/snippets-i3-gaps/
+# delete or uncomment the following lines if you do not have it or do not
+# want it
+# packer i3-gaps-next-git --noedit
+
+for_window [class="^.*"] border pixel 0
+gaps inner 15 
+gaps outer 2
+smart_gaps on
+smart_borders on
+
 
 
 ###########################################################################
@@ -155,18 +172,6 @@ bindsym $mod+q focus parent
 #bindsym $mod+d focus child
 
 
-# move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+section move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -212,7 +217,7 @@ mode "resize" {
 ###########################################################################
 
 
-#setting variables for later use
+#setting variables for multiple screens
 
 set $firstMonitor DVI-I-1
 set $secondMonitor DVI-I-2
@@ -235,7 +240,6 @@ workspace 9 output $secondMonitor
 workspace 10 output $secondMonitor
 
 
-
 # switch to workspace
 bindsym $mod+ampersand workspace 1
 bindsym $mod+eacute workspace 2
@@ -247,6 +251,21 @@ bindsym $mod+egrave workspace 7
 bindsym $mod+exclam workspace 8
 bindsym $mod+ccedilla workspace 9
 bindsym $mod+agrave workspace 10
+
+
+
+# move focused container to workspace
+bindsym $mod+Shift+ampersand move container to workspace 1; workspace 1
+bindsym $mod+Shift+eacute move container to workspace 2; workspace 2
+bindsym $mod+Shift+quotedbl move container to workspace 3; workspace 3
+bindsym $mod+Shift+apostrophe move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+section move container to workspace 6; workspace 6
+bindsym $mod+Shift+egrave move container to workspace 7; workspace 7
+bindsym $mod+Shift+exclam move container to workspace 8; workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9; workspace 9
+bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
+
 
 
 #mouse settings
@@ -275,18 +294,50 @@ assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
 assign [class="Thunar"]           → 7
-assign [class="Geary"]            → 8
+assign [class="Thunderbird"]      → 8
 
 
 for_window [class="Firefox"] focus
 
+#start tray applications
+exec --no-startup-id nm-applet
+exec network-manager-applet
+exec CopyAgent
+exec volumeicon
+exec variety
+exec pamac-tray
 
 #startup applications you always use
-
-#background applications
-
-#variety is taking care of rotating wallpapers
+exec firefox
+exec subl3      # version 3
+exec thunderbird
+exec spotify
+exec thunar
 exec_always --no-startup-id numlockx on
+
+
+#SHORTCUTS
+#mod1 = ALT
+bindsym $mod+Shift+Return exec thunar
+bindsym control+mod1+f exec firefox;workspace 1
+bindsym control+mod1+s exec spotify;workspace 6
+bindsym control+mod1+w exec subl3;workspace 2
+bindsym control+mod1+a exec thunar;workspace 7
+bindsym control+mod1+b exec thunderbird;workspace 8
+bindsym control+mod1+i exec inkscape;workspace 3
+bindsym control+mod1+p exec gimp;workspace 4
+bindsym control+mod1+c exec catfish
+bindsym control+mod1+t exec terminator
+bindsym control+mod1+Delete exec xfce4-taskmanager
+bindsym control+Shift+Escape exec xfce4-taskmanager
+bindsym control+mod1+q exec xfce4-taskmanager
+bindsym control+Print exec xfce4-screenshooter
+
+
+# Screenshots
+#bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S').png
+bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/'
+bindsym shift+Print exec shutter
 
 
 
@@ -327,49 +378,13 @@ for_window [class="Imagewriter"] floating enable
 
 for_window [class="Hexchat"] floating disable
 
-#start tray applications
-
-exec --no-startup-id nm-applet
-exec network-manager-applet
-#exec dropbox start
-#exec CopyAgent
-#exec --no-startup-id "pulseaudio --start"
-exec volumeicon
-exec variety
-exec pamac-tray
-
-
-#workspace related applications (--no-startup-id)
-
-exec firefox
-#exec subl      # version 2
-exec subl3      # version 3
-exec geary
-exec spotify
-exec thunar
-
 #Popups during fullscreen mode
 popup_during_fullscreen smart
 
 
-#personal app launchers
 
-#Filemanagers
-bindsym $mod+Shift+Return exec thunar
 
-#mod1 = ALT
-bindsym control+mod1+f exec firefox 
-bindsym control+mod1+g exec geary
-bindsym control+mod1+s exec spotify
-#bindsym control+mod1+w exec subl
-bindsym control+mod1+w exec subl3
-bindsym control+mod1+a exec xfce4-appfinder
-bindsym control+mod1+b exec thunar
-bindsym control+mod1+c exec catfish
-bindsym control+mod1+Delete exec xfce4-taskmanager
-bindsym control+mod1+q exec xfce4-taskmanager
-bindsym control+Shift+Escape exec xfce4-taskmanager
-bindsym control+Print exec xfce4-screenshooter
+
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -385,15 +400,6 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Pause mode "$mode_system"
-
-
-
-# Screen Shots
-# png
-# bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S').png
-# jpeg
-bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/'
-
 
 
 # next/previous workspace
