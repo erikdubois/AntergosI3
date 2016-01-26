@@ -95,8 +95,8 @@ set $mod Mod4
 # font pango:Sans 13 
 
 # Personal preference
-font pango:DroidSansMono 
 
+font pango:DroidSansMono 
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -383,8 +383,7 @@ popup_during_fullscreen smart
 
 
 
-
-
+bindsym $mod+Pause mode "$mode_system"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -399,7 +398,7 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Pause mode "$mode_system"
+
 
 
 # next/previous workspace
@@ -449,16 +448,16 @@ bar {
     #you can change the place via xrandr
     #output DVI-0
     
-    colors {
-            background #2F2F2F
-            statusline #eeeeee
-            separator #666666
-            #                  border  backgr. text
-            focused_workspace  #a9a9a9 #222222 #a9a9a9
-            active_workspace   #a9a9a9 #222222 #a9a9a9
-            inactive_workspace #a9a9a9 #5f676a #a9a9a9
-            urgent_workspace   #4A4A4A #4A4A4A #a9a9a9
-            }
+colors {
+background #000000
+statusline #2E9AFE
+separator #00000
+#Bord #Back #Text
+focused_workspace #2E9AFE #cccccc #2E9AFE
+active_workspace #2E9AFE #444444 #2E9AFE
+inactive_workspace #2E9AFE #000000 #2E9AFE
+urgent_workspace #2E9AFE #000000 #900000
+}
     }
 
 # DarkGrey background with white text - not focus grey background - black text
@@ -467,8 +466,8 @@ bar {
 client.placeholder      #242424 #242424 #242424
 client.background       #242424 #242424 #242424
 client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
-client.unfocused        #222222 #222222 #aaaaaa #222222
-client.focused_inactive #222222 #222222 #a9a9a9 #222222
+client.unfocused        #4A4A4A #222222 #aaaaaa #222222
+client.focused_inactive #4A4A4A #222222 #a9a9a9 #222222
 client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 

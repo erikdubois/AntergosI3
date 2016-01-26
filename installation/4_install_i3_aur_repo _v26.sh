@@ -214,12 +214,6 @@ echo "################################################################"
 
 packer alsi --noedit --noconfirm
 
-echo "################################################################"
-echo "screenfo"
-echo "################################################################"
-
-packer screenfo --noedit --noconfirm
-
 # if you want a program that tells to update
 # or just type sudo pacman -Syu when you feel like it
 # packer pamac --noedit   # if not on antergos

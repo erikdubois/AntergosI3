@@ -68,9 +68,7 @@ sudo pacman -S gnome-font-viewer --noconfirm
 
 sudo pacman -S firefox flashplugin transmission-gtk hexchat --noconfirm
 sudo pacman -S filezilla --noconfirm
-
-# activate multilib in the pacman.conf
-# sudo pacman -S skype
+#sudo pacman -S skype --noconfirm
 
 ######## M U L T I M E D I A   #########
 

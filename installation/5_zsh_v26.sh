@@ -32,10 +32,16 @@ sudo pacman -S zsh --noconfirm
 #zsh enhancements
 
 echo "################################################################"
+echo "zsh-syntax-highlighting"
+echo "################################################################"
+
+packer zsh-syntax-highlighting --noedit --noconfirm
+
+echo "################################################################"
 echo "installing zsh-completions"
 echo "################################################################"
 
-packer zsh-completions --noedit --noconfirm
+packer zsh-completions  --noedit --noconfirm
 
 
 # Installation of OH-MY-ZSH from the github (best way to install!!)
