@@ -357,7 +357,7 @@ Edit this file and copy/paste this code inside:
 
 https://github.com/shimmerproject/Numix/issues/206
 
-Reboot
+Gone to thunderbird now
 
 
 # 19. The links from step 4 are really important
