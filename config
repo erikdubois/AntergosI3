@@ -460,7 +460,8 @@ urgent_workspace #2E9AFE #000000 #900000
 }
     }
 
-# DarkGrey background with white text - not focus grey background - black text
+# Black background with arch blue text and borders
+# grey/white background - blue text for rest
 # Windows decoration colors
 # class                 border  backgr. text    indicator
 client.placeholder      #242424 #242424 #242424
