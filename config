@@ -311,6 +311,7 @@ exec --no-startup-id nm-applet
 exec network-manager-applet
 exec CopyAgent
 exec volumeicon
+#alternative is nitrogen
 exec variety
 exec pamac-tray
 exec --no-startup-id _xautolock -time 5 -locker blurlock
