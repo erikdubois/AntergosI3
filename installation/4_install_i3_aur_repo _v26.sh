@@ -104,6 +104,7 @@ echo "################################################################"
 echo "kazam"
 echo "################################################################"
 
+# show keystrokes on screen - key-mon or screenkey
 packer kazam --noedit --noconfirm
 
 ######## O F F I C E           #########
