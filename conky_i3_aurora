@@ -1,0 +1,43 @@
+conky.config = {
+	alignment = 'top_right',
+	background = true,
+	color2 = 'fefefe',
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	font = 'Droid Sans:size=12',
+	gap_x = 25,
+	gap_y = 25,
+	minimum_width = 250,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 1.0,
+	use_xft = true,
+}
+conky.text = [[
+$alignr$color2${font Droid Sans:size=20}${time %A}
+$alignr${time %e}   ${time %b}   ${time %Y}
+$hr
+#
+${voffset 5}${goto 40}${color}${font Droid Sans:bold}CPU${font Droid Sans:bold}$alignr$cpu%
+${voffset 5}${goto 40}$font$color2${top name 1}$alignr$color${top cpu 1}%
+${goto 40}$color2${top name 2}$alignr$color${top cpu 2}%
+${goto 40}$color2${top name 3}$alignr$color${top cpu 3}%
+${goto 40}$color2${top name 4}$alignr$color${top cpu 4}%
+${goto 40}$color2${top name 5}$alignr$color${top cpu 5}%
+#
+${voffset 10}${goto 40}${color1}${font Droid Sans:bold}RAM${font Droid Sans:bold}$alignr$mem$font
+${goto 40}${voffset 5}$color2${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${goto 40}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
+${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
+#
+${voffset 20}
+#${color2}${alignr}${execi 1200 whoami}@${nodename}
+${alignr}${color2}${font Droid Sans:size=12}uptime: ${color}${uptime_short}
+${color2}${font Droid Sans:size=12}${alignr}kernel: ${color}${kernel}
+${voffset 0}$alignr$color${font Droid Sans:size=12 Sans:bold}${execi 5000 cat /etc/os-release | perl -n -e '/^NAME=\"([a-zA-Z ]*)\"$/ && print "$1\n"'}
+]]

@@ -42,7 +42,7 @@ exec setxkbmap be
 # exec $HOME/.i3/scripts/dualscreen_autoset.sh
 
 # if you want transparency on non-focused windows
-# exec_always compton --config ~/.i3/compton.conf
+exec_always compton --config ~/.i3/compton.conf
 # new_window pixel
 
 # get the mouse out of the way with unclutter
@@ -306,6 +306,7 @@ exec CopyAgent
 exec volumeicon
 exec variety
 exec pamac-tray
+exec --no-startup-id _xautolock -time 5 -locker blurlock
 
 #startup applications you always use
 exec firefox
@@ -314,6 +315,7 @@ exec thunderbird
 exec spotify
 exec thunar
 exec_always --no-startup-id numlockx on
+exec conky -c ~/.i3/conky_i3_aurora
 
 
 #SHORTCUTS
