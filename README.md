@@ -465,7 +465,7 @@ win + d = dmenu
 
 shift + win + d = j4dmenu
 
-ctrl + alt + a = xfce-appfinder
+ctrl + alt + a = thunar
 
 win + shift + e = exit i3
 
@@ -478,7 +478,8 @@ win + pause/break = let you suspend,hibernate, reboot and quit
 All shortcuts are kept in one file : "config"
 You do well to read this file.
 
-lxappearance and qtconfig-qt4 are the first programs I use to change themes, fonts, icons.
+
+<b>lxappearance and qtconfig-qt4 are the first programs I use to change themes, fonts, icons.</b>
 
 
 
