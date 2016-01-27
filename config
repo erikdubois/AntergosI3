@@ -306,7 +306,8 @@ for_window [class="Firefox"] focus
 
 #start tray applications
 exec --no-startup-id nm-applet
-exec_always network-manager
+# sudo systemctl enable networkmanager
+# sudo systemclt start networkmanager
 exec network-manager-applet
 exec CopyAgent
 exec volumeicon
@@ -321,7 +322,7 @@ exec thunderbird
 exec spotify
 exec thunar
 exec_always --no-startup-id numlockx on
-exec_always ~/.i3/start_conkys.sh
+exec ~/.i3/start_conkys.sh
 #exec conky -c ~/.i3/conky_i3_aurora
 #exec conky -c ~/.i3/conky_i3_aurora_shortcuts
 
