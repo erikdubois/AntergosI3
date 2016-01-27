@@ -449,7 +449,8 @@ Beware it is in a crucial file
 
 Open /etc/pacman.conf
 Find the options and add the text
-ILoveCandy
+<b>ILoveCandy</b>
+If your internet connection is quite fast, you will hardly see it.
 
 
 
