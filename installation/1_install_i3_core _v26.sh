@@ -83,6 +83,12 @@ echo "################################################################"
 # change to SigLevel   = Never 
 
 
+# other solution is
+# sudo mkdir /root/.gnupg
+# sudo pacman-key --refresh-keys
+
+
+
 sudo pacman -S i3-wm i3lock i3status --noconfirm
 
 # Standard Menu system for i3
