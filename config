@@ -20,9 +20,9 @@
 # packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 0
-gaps inner 15 
+gaps inner 10
 gaps outer 2
-smart_gaps on
+#smart_gaps on
 smart_borders on
 
 
@@ -300,11 +300,14 @@ assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
+assign [class="spotify"]          → 6
 assign [class="Thunar"]           → 7
-assign [class="Thunderbird"]      → 8
+assign [class="Geary"]            → 8
 
 
 for_window [class="Firefox"] focus
+for_window [class="Thunar"] focus
+
 
 #start tray applications
 exec --no-startup-id nm-applet
@@ -321,8 +324,8 @@ exec --no-startup-id _xautolock -time 5 -locker blurlock
 #startup applications you always use
 exec --no-startup-id firefox
 exec --no-startup-id subl3      # version 3
-exec --no-startup-id thunderbird
-exec --no-startup-id spotify
+exec --no-startup-id geary
+exec spotify
 exec --no-startup-id thunar
 exec_always --no-startup-id numlockx on
 exec ~/.i3/start_conkys.sh
@@ -336,7 +339,7 @@ bindsym control+mod1+f exec firefox;workspace 1
 bindsym control+mod1+s exec spotify;workspace 6
 bindsym control+mod1+w exec subl3;workspace 2
 bindsym control+mod1+a exec thunar;workspace 7
-bindsym control+mod1+b exec thunderbird;workspace 8
+bindsym control+mod1+b exec geary;workspace 8
 bindsym control+mod1+i exec inkscape;workspace 3
 bindsym control+mod1+p exec gimp;workspace 4
 bindsym control+mod1+c exec catfish
