@@ -138,7 +138,8 @@ Therefor I will do the following steps to keep my azerty keyboard
 
 	sudo nano /etc/locale.conf
 
-Change this to
+Add this line at the bottom
+
 
 	KEYMAP=be-latin1
 
@@ -156,6 +157,12 @@ Git is NOT installed then
 Git is already installed then
 
 	git clone https://github.com/erikdubois/antergosi3
+
+
+no internet on lan, try these
+
+    sudo systemctl enable dhcpcd
+    sudo systemctl start dhcpcd
 
 
 
