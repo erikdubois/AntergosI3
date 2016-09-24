@@ -39,5 +39,5 @@ ${voffset 20}
 #${color2}${alignr}${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Droid Sans:size=12}uptime: ${color}${uptime_short}
 ${color2}${font Droid Sans:size=12}${alignr}kernel: ${color}${kernel}
-${voffset 0}$alignr$color${font Droid Sans:size=12 Sans:bold}${execi 5000 cat /etc/os-release | perl -n -e '/^NAME=\"([a-zA-Z ]*)\"$/ && print "$1\n"'}
+${voffset 0}$alignr${color2}${font Droid Sans:size=14}${execi 5000 cat /etc/os-release | perl -n -e '/^NAME=\"([a-zA-Z ]*)\"$/ && print "$1\n"'}
 ]]
