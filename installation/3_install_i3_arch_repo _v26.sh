@@ -80,8 +80,7 @@ sudo pacman -S shotwell --noconfirm
 ######## O F F I C E           #########
 
 sudo pacman -S geary --noconfirm
-
-
+sudo pacman -S evolution --noconfirm
 ######## S E T T I N G S       #########
 
        # T H E M I N G #

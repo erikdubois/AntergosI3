@@ -20,11 +20,9 @@
 # packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 0
-gaps inner 5
-gaps outer 5
-# if you do not want to see a gap when there is one window open then add the next line
-# with two programs on one screen you will have always a border
-#smart_gaps on
+gaps inner 15 
+gaps outer 2
+smart_gaps on
 smart_borders on
 
 
@@ -396,15 +394,6 @@ for_window [class="Hexchat"] floating disable
 popup_during_fullscreen smart
 
 
-#Variety keybindings mod1 = ALT
-# trash wallpaper
-bindsym mod1+t exec variety -t
-# next wallpaper
-bindsym mod1+n exec variety -n
-# previous wallpaper
-bindsym mod1+p exec variety -p
-# favorite wallpaper
-bindsym mod1+f exec variety -f
 
 bindsym $mod+Pause mode "$mode_system"
 

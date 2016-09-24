@@ -20,10 +20,8 @@
 # packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 0
-gaps inner 5
-gaps outer 5
-# if you do not want to see a gap when there is one window open then add the next line
-# with two programs on one screen you will have always a border
+gaps inner 10
+gaps outer 2
 #smart_gaps on
 smart_borders on
 
@@ -45,6 +43,8 @@ exec setxkbmap be
 
 # if you want transparency on non-focused windows
 exec_always compton -b --config ~/.i3/compton.conf
+
+
 # new_window pixel
 
 # get the mouse out of the way with unclutter
@@ -300,11 +300,14 @@ assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
-assign [class="Thunar"]           → 7
-assign [class="Evolution"]        → 8
+assign [class="spotify"]          → 6
+#assign [class="Thunar"]           → 7
+assign [class="Geary"]            → 8
 
 
 for_window [class="Firefox"] focus
+for_window [class="Thunar"] focus
+
 
 #start tray applications
 exec --no-startup-id nm-applet
@@ -321,8 +324,8 @@ exec --no-startup-id _xautolock -time 5 -locker blurlock
 #startup applications you always use
 exec --no-startup-id firefox
 exec --no-startup-id subl3      # version 3
-exec --no-startup-id evolution
-exec --no-startup-id spotify
+exec --no-startup-id geary
+exec spotify
 exec --no-startup-id thunar
 exec_always --no-startup-id numlockx on
 exec ~/.i3/start_conkys.sh
@@ -336,7 +339,7 @@ bindsym control+mod1+f exec firefox;workspace 1
 bindsym control+mod1+s exec spotify;workspace 6
 bindsym control+mod1+w exec subl3;workspace 2
 bindsym control+mod1+a exec thunar;workspace 7
-bindsym control+mod1+b exec evolution;workspace 8
+bindsym control+mod1+b exec geary;workspace 8
 bindsym control+mod1+i exec inkscape;workspace 3
 bindsym control+mod1+p exec gimp;workspace 4
 bindsym control+mod1+c exec catfish
@@ -344,7 +347,6 @@ bindsym control+mod1+t exec terminator
 bindsym control+mod1+Delete exec xfce4-taskmanager
 bindsym control+Shift+Escape exec xfce4-taskmanager
 bindsym control+mod1+q exec xfce4-taskmanager
-
 
 
 # Screenshots
@@ -356,8 +358,8 @@ bindsym control+Print exec xfce4-screenshooter
 
 
 #floating enabled from some programs
-for_window [class="Gnome-disks"] floating enable
-for_window [class="^Skype$"] floating enable
+for_window [class="Gnome-disks"] floating enable, focus, floating enable, move absolute center
+for_window [class="^Skype$"] floating enable, focus, floating enable, move absolute center
 for_window [class="^Gnome-font-viewer$"] floating enable
 #for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
@@ -365,30 +367,30 @@ for_window [class="^Gpick$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 6
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
-for_window [instance="variety"] floating enable
+for_window [instance="variety"] floating enable, focus, floating enable, move absolute center
 for_window [class="Gnome-system-monitor"] floating enable
-for_window [class="Brasero"] floating enable
-for_window [class="Xfburn"] floating enable
-for_window [class="Xfce4-appfinder"] floating enable
-for_window [class="Wine"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="CopyAgent"] floating enable
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="^Preferences$"] floating enable
-for_window [window_role="setup"] floating enable
-for_window [title="^Terminator Preferences$"] floating enable
-for_window [class="Font-manager"] floating enable
-for_window [class="System-config-printer.py"] floating enable
-for_window [class="Nitrogen"] floating enable
-for_window [title="Copying"] floating enable  
-for_window [title="Deleting"] floating enable  
-for_window [title="Moving"] floating enable
-for_window [class="Unetbootin.elf"] floating enable
-for_window [class="Galculator"] floating enable
-for_window [class="Usb-creator-gtk"] floating enable
+for_window [class="Brasero"] floating enable, focus, floating enable, move absolute center
+for_window [class="Xfburn"] floating enable, focus, floating enable, move absolute center
+for_window [class="Xfce4-appfinder"] floating enable, focus, floating enable, move absolute center
+for_window [class="Wine"] floating enable, focus, floating enable, move absolute center
+for_window [class="Pavucontrol"] floating enable, focus, floating enable, move absolute center
+for_window [class="CopyAgent"] floating enable, focus, floating enable, move absolute center
+for_window [window_role="pop-up"] floating enable, focus, floating enable, move absolute center
+for_window [window_role="^Preferences$"] floating enable, focus, floating enable, move absolute center
+for_window [window_role="setup"] floating enable, focus, floating enable, move absolute center
+for_window [title="^Terminator Preferences$"] floating enable, focus, floating enable, move absolute center
+for_window [class="Font-manager"] floating enable, focus, floating enable, move absolute center
+for_window [class="System-config-printer.py"] floating enable, focus, floating enable, move absolute center
+for_window [class="Nitrogen"] floating enable, focus, floating enable, move absolute center
+for_window [title="Copying"] floating enable, focus, floating enable, move absolute center
+for_window [title="Deleting"] floating enable, focus, floating enable, move absolute center  
+for_window [title="Moving"] floating enable, focus, floating enable, move absolute center
+for_window [class="Unetbootin.elf"] floating enable, focus, floating enable, move absolute center
+for_window [class="Galculator"] floating enable, focus, floating enable, move absolute center
+for_window [class="Usb-creator-gtk"] floating enable, focus, floating enable, move absolute center
 for_window [instance="script-fu"] border normal
-for_window [class="Xfce4-taskmanager"] floating enable
-for_window [class="Imagewriter"] floating enable
+for_window [class="Xfce4-taskmanager"] floating enable, focus, floating enable, move absolute center
+for_window [class="Imagewriter"] floating enable, focus, floating enable, move absolute center
 
 for_window [class="Hexchat"] floating disable
 
@@ -396,15 +398,6 @@ for_window [class="Hexchat"] floating disable
 popup_during_fullscreen smart
 
 
-#Variety keybindings mod1 = ALT
-# trash wallpaper
-bindsym mod1+t exec variety -t
-# next wallpaper
-bindsym mod1+n exec variety -n
-# previous wallpaper
-bindsym mod1+p exec variety -p
-# favorite wallpaper
-bindsym mod1+f exec variety -f
 
 bindsym $mod+Pause mode "$mode_system"
 
