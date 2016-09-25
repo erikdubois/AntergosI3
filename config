@@ -103,7 +103,6 @@ bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
 
-
 # change focus between tiling / floating windows
 bindsym $mod+space floating toggle
 
@@ -157,6 +156,7 @@ mode "resize" {
 
 
 
+
 ###########################################################################
 ###########################################################################
 ###################  Personal Settings   ##################################
@@ -200,7 +200,7 @@ mode "resize" {
 # font pango:Arimo 11
 # font pango:Sans 13 
 # font pango:Noto Mono Regular 13
-font pango:DroidSansMono 
+font pango:DroidSansMono 13
 
 
 ################### TERMINAL ######################
@@ -213,6 +213,7 @@ font pango:DroidSansMono
 
 
 # personal preference for tuning the look
+#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec terminator; focus
 
 
@@ -318,7 +319,6 @@ assign [class="sublime_text"]     → 2
 assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
-assign [class="Spotify"]          → 6
 assign [class="vlc"]              → 7
 assign [class="Nemo"]             → 8
 assign [class="Evolution"]        → 9
@@ -334,7 +334,6 @@ for_window [class="Spotify"] move to workspace 10
 exec --no-startup-id nm-applet
 exec network-manager-applet
 exec volumeicon
-#alternative is nitrogen
 exec variety
 exec pamac-tray
 exec --no-startup-id _xautolock -time 5 -locker blurlock
@@ -359,12 +358,21 @@ exec ~/.i3/start_conkys.sh
 
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
 bindsym control+mod1+f exec firefox;workspace 1; focus
-bindsym control+mod1+s exec spotify;workspace 10;focus
+bindsym $mod+F1 exec firefox;workspace 1;focus
 bindsym control+mod1+w exec subl3;workspace 2;focus
-bindsym control+mod1+b exec nemo --no-desktop; workspace 8; focus
-bindsym control+mod1+e exec evolution;workspace 9;focus
+bindsym $mod+F2 exec subl3;workspace 2;focus
 bindsym control+mod1+i exec inkscape;workspace 3;focus
-bindsym control+mod1+p exec gimp;workspace 4;focus
+bindsym $mod+F3 exec inkscape;workspace 3;focus
+bindsym control+mod1+g exec gimp;workspace 4;focus
+bindsym $mod+F4 exec gimp;workspace 4;focus
+bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
+bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
+bindsym control+mod1+e exec evolution;workspace 9;focus
+bindsym $mod+F9 exec evolution;workspace 9;focus
+bindsym control+mod1+s exec spotify;workspace 10;focus
+bindsym $mod+F10 exec spotify;workspace 10;focus
+
+
 bindsym control+mod1+c exec catfish;focus
 bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+Delete exec xfce4-taskmanager;focus
@@ -401,7 +409,8 @@ bindsym control+Print exec xfce4-screenshooter
 ################### FLOATING OR TILED ######################
 
 
-#floating enabled from some programs
+#floating enabled from some programs  -find name with xprop
+
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
