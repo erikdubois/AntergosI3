@@ -17,6 +17,11 @@ It is really great once you have mastered the most important shortcuts.
 
 https://i3wm.org/
 
+# The latest screenshots
+
+![Screenshots](http://i.imgur.com/43QNXCN.jpg)
+
+
 # What can you achieve?
 
 There is a fork where you can choose to have gaps between the windows.
