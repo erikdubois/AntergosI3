@@ -236,16 +236,23 @@ bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'DroidSansMono:bol
 ################### DUAL SCREEN ######################
 
 
-#setting variables for multiple screens
+# setting variables for later use
+# use xrandr to know the names of your monitors
+# use this line to tell which monitor is on the right
+# xrandr --output DVI-I-2 --right-of DVI-I-1 --auto
 
+# my current setup
 set $firstMonitor DVI-I-1
 set $secondMonitor DVI-I-2
 
+#set $firstMonitor DVI-I-2
+#set $secondMonitor VGA-0
+
+#set $firstMonitor DVI-I-2
+#set $secondMonitor DVI-I-3
+
 #set $firstMonitor DVI-0
 #set $secondMonitor DVI-1
-
-# use xrandr to know how your monitors are called
-# mine are called DVI-I-1 and 2
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
@@ -281,11 +288,6 @@ bindsym $mod+Shift+egrave move container to workspace 7; workspace 7
 bindsym $mod+Shift+exclam move container to workspace 8; workspace 8
 bindsym $mod+Shift+ccedilla move container to workspace 9; workspace 9
 bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
-
-
-# Script to tell which screen goes to the left or the right
-# Dual screen setting
-# exec $HOME/.i3/scripts/dualscreen_autoset.sh
 
 
 ################### MOUSE ######################
@@ -329,6 +331,7 @@ for_window [class="Spotify"] move to workspace 10; focus
 
 
 ################### EXECUTE ######################
+
 
 # TRAY APPLICATIONS
 exec --no-startup-id nm-applet
@@ -375,8 +378,6 @@ bindsym control+mod1+e exec evolution;workspace 9;focus
 bindsym $mod+F9 exec evolution;workspace 9;focus
 bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
-
-
 bindsym control+mod1+c exec catfish;focus
 bindsym control+mod1+t exec terminator; focus
 bindsym control+mod1+Delete exec xfce4-taskmanager;focus
@@ -667,6 +668,49 @@ gaps outer 5
 # with two programs on one screen you will have always a border
 #smart_gaps on
 #smart_borders on
+
+
+###########################################################################
+###################       I3 GAPS CHANGE     ##############################
+###########################################################################
+
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 
 ###########################################################################
