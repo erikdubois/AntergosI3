@@ -350,12 +350,13 @@ exec dunst -conf ~/.i3/dunstrc
 exec --no-startup-id firefox
 for_window [class="Firefox"] focus
 exec --no-startup-id subl3      # version 3
-exec --no-startup-id evolution
+#exec --no-startup-id evolution
 exec --no-startup-id spotify
 for_window [class="Spotify"] focus
 exec --no-startup-id nemo --no-desktop
 exec_always --no-startup-id numlockx on
 exec ~/.i3/start_conkys.sh
+#exec conky -c ~/.config/conky/conky.conf
 #exec --no-startup-id conky -c ~/.i3/conky_i3_aurora
 #exec --no-startup-id conky -c ~/.i3/conky_i3_aurora_shortcuts
 
@@ -719,3 +720,5 @@ mode "$mode_gaps_outer" {
 
 #if you want dimming on non-focused windows
 exec_always compton -b --config ~/.i3/compton.conf
+
+

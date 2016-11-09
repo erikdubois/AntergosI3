@@ -84,5 +84,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias fixit="sudo rm -f /var/lib/pacman/db.lck"
 alias upgrade="sudo pacman -Syyu"
-
+alias upgraade="packer -Syyu"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+autoload -Uz compinit
+compinit
