@@ -214,7 +214,8 @@ font pango:DroidSansMono 13
 
 # personal preference for tuning the look
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator;focus
+#bindsym $mod+Return exec terminator;focus
+bindsym $mod+Return exec gnome-terminal;focus
 
 
 ################### MENU ######################
@@ -355,7 +356,8 @@ exec --no-startup-id spotify
 for_window [class="Spotify"] focus
 exec --no-startup-id nemo --no-desktop
 exec_always --no-startup-id numlockx on
-exec ~/.i3/start_conkys.sh
+exec insync start
+#exec ~/.i3/start_conkys.sh
 #exec conky -c ~/.config/conky/conky.conf
 #exec --no-startup-id conky -c ~/.i3/conky_i3_aurora
 #exec --no-startup-id conky -c ~/.i3/conky_i3_aurora_shortcuts
@@ -380,10 +382,12 @@ bindsym $mod+F9 exec evolution;workspace 9;focus
 bindsym control+mod1+s exec spotify;workspace 10;focus
 bindsym $mod+F10 exec spotify;workspace 10;focus
 bindsym control+mod1+c exec catfish;focus
-bindsym control+mod1+t exec terminator; focus
+#bindsym control+mod1+t exec terminator; focus
+bindsym control+mod1+t exec gnome-terminal; focus
 bindsym control+mod1+Delete exec xfce4-taskmanager;focus
 bindsym control+Shift+Escape exec xfce4-taskmanager;focus
 bindsym control+mod1+q exec xfce4-taskmanager;focus
+
 
 
 ################### SHORTCUTS WORKSPACES ######################
@@ -468,6 +472,7 @@ bindsym mod1+n exec variety -n
 bindsym mod1+p exec variety -p
 # favorite wallpaper
 bindsym mod1+f exec variety -f
+
 
 
 ################### MODE_SYSTEM ######################
@@ -663,7 +668,7 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 # packer i3-gaps-next-git --noedit
 
 for_window [class="^.*"] border pixel 4
-gaps inner 5
+gaps inner 10
 gaps outer 5
 # if you do not want to see a gap when there is one window open then add the next line
 # with two programs on one screen you will have always a border
