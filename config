@@ -669,7 +669,7 @@ client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 for_window [class="^.*"] border pixel 4
 gaps inner 10
-gaps outer 5
+gaps outer 10
 # if you do not want to see a gap when there is one window open then add the next line
 # with two programs on one screen you will have always a border
 #smart_gaps on
