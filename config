@@ -507,7 +507,7 @@ for_window [class="Nemo"] focus
 #exec nautilus --no-desktop
 #exec caja
 #exec thunar
-exec ~/.config/i3/start-conkys.sh
+#exec ~/.config/i3/start-conkys.sh
 #exec dunst -config ~/.config/i3/dunstrc
 #exec --no-startup-id evolution
 #exec --no-startup-id conky
@@ -579,10 +579,8 @@ for_window [urgent=latest] focus
 
 
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
-#bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Pictures'
 bindsym Control+Print exec gnome-screenshot -i
-#bindsym shift+Print exec shutter
-#bindsym control+Print exec xfce4-screenshooter
+
 
 
 ################### FLOATING OR TILED ######################
@@ -716,12 +714,7 @@ new_float normal
 #new_float none
 
 
-###################       KEYBOARD      ##############################
 
-
-# AZERTY KEYBOARD
-# Change this if you use qwerty
-exec setxkbmap be
 
 
 ###################       UNCLUTTER      ##############################
@@ -762,7 +755,7 @@ status_command i3status -c ~/.config/i3/i3status.conf
     # put hastag in front if not installed
 
 #status_command i3blocks
-#status_command i3blocks -c ~/.config/i3/i3blocks.conf
+status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
 
 # OPTION 3 : conky
@@ -1009,4 +1002,11 @@ exec --no-startup-id blueman-applet
 #settings
 #bindsym control+mod1+n exec cinnamon-settings
 bindsym control+mod1+n exec gnome-control-center
+
+###################       KEYBOARD      ##############################
+
+
+# AZERTY KEYBOARD
+# Change this if you use qwerty
+exec setxkbmap be
 
