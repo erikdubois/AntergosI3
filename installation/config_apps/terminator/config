@@ -1,0 +1,22 @@
+[global_config]
+  title_transmit_bg_color = "#444444"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.7
+    background_image = None
+    background_type = transparent
+    font = Monospace 14
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

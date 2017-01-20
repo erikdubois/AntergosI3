@@ -54,59 +54,12 @@
 #
 ##################################################################################################################
 
-# echo "# Ultimate-Linux-Mint-18" >> README.md
-# git init
-# git add README.md
-# git commit -m "first commit"
-# git remote add origin https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon.git
-# git push -u origin master
 
-# git config --global user.name x
-# git config --global user.email x
-# sudo git config --system core.editor nano
-# git config --global credential.helper cache
-# git config --global credential.helper 'cache --timeout=3600'
+gsettings set org.gnome.gnome-screenshot default-file-type jpg 
 
-
-# Force git to overwrite local files on pull - no merge
-
-# git fetch all
-
-# git push --set-upstream origin master
-
-# git reset --hard orgin/master
-
-
-# checking if kernel files are present otherswise github will become too big
-
-
-if [ -f linux* ]; then
-	echo "####################################"
-    echo "Stopping the script!!"
-    echo "Wait for the kernel update script to quit."
-    echo "####################################"
-    exit 0
-fi
-
-# checking if I have the latest files from github
-
-git pull
-
-# Below command will backup everything inside the project folder
-git add --all .
-
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
-
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-curtime=$(date)
-git commit -m "Commit comment : $input on $curtime"
-
-# Push the local snapshot to a remote destination
-
-git push -u origin master
-
-
+echo
+echo
+echo "###############################"
+echo "All done"
+echo "###############################"
+sleep 5
