@@ -17,7 +17,7 @@ sudo pacman -S --noconfirm --needed darktable dconf-editor
 sudo pacman -S --noconfirm --needed dmidecode 
 sudo pacman -S --noconfirm --needed evince evolution filezilla 
 sudo pacman -S --noconfirm --needed galculator geary gimp git glances gnome-disk-utility 
-sudo pacman -S --noconfirm --needed gnome-font-viewer gnome-tweak-tool 
+sudo pacman -S --noconfirm --needed gnome-font-viewer gnome-terminal gnome-tweak-tool 
 sudo pacman -S --noconfirm --needed gparted gpick grsync
 sudo pacman -S --noconfirm --needed hardinfo hddtemp hexchat htop 
 sudo pacman -S --noconfirm --needed inkscape inxi lm_sensors meld mlocate mpv

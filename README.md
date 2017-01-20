@@ -47,7 +47,6 @@ Go inside the installation folder and run these or even more.
 
 Do not forget to type "./" in front of the name.
 
-
 These scripts will point to some of the other scripts in the folder. So keep them together.
 
 
@@ -62,6 +61,49 @@ Some of the applications that will be installed are
     ...
 
 There are other scripts for more applications. If needed, you can install them individually.
+
+
+
+## setting i3 to start at boot
+
+Navigate to your home folder in my case /home/erik
+
+    cd ..
+    cd ..
+    pwd will give your present working day
+
+In your home folder you type the following line
+
+    cp /etc/X11/xinit/xinitrc ~/.xinitrc
+
+This will give us a template for the file that will start our i3wm.
+
+    ls -al will show you that the file is actually in your home folder
+    cat ~/.xinitrc will type the contents on the screen
+
+Let us edit this file and change the last line to start i3wm.
+
+    nano .xinitrc
+
+Go to the end of the file
+
+Replace the last line from
+
+    exec xterm -geometry 80x60x0x0 -name login
+
+into
+
+    exec i3
+
+Save with CTRL+X and yes.
+
+More info : https://wiki.archlinux.org/index.php/Xinit
+
+
+Type this in the terminal now
+
+    startx
+
 
 ##Change the theme
 
