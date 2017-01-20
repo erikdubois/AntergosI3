@@ -43,7 +43,6 @@ https://i3wm.org/
 
 
 
-
 # A N T E R G O S    L I N U X 
 --------------------------------
 
