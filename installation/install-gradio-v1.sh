@@ -12,34 +12,51 @@
 ##################################################################################################################
 
 
-program="gradio"
+package="gradio"
+command="gradio"
 
+#----------------------------------------------------------------------------------
 
-if which pacaur > /dev/null; then
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
 
-	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
 
-elif which packer > /dev/null; then
+else
 
-	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
 
-elif which yaourt > /dev/null; then
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
 
-	echo "Installing with yaourt"
-	yaourt -S --noconfirm --noedit  $program
-		  	
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+	
+	echo "################################################################"
+	echo "#########  "$package" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
 fi
-
-
-
-
-
-##################################################################################################################
-
-echo "################################################################"
-echo "###################    T H E   E N D      ######################"
-echo "################################################################"
-
-
