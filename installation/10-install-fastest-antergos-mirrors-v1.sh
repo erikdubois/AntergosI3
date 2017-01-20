@@ -13,9 +13,6 @@ echo "####  T O O L  T O  F I N D  F A S T E S T   S E R V E R S   ###"
 echo "################################################################"
 
 
-# installing refector to test wich servers are fastest
-sudo pacman -S --noconfirm --needed rankmirrors
-
 
 echo "################################################################"
 echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
