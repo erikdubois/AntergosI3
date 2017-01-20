@@ -43,7 +43,7 @@ sh install-insync-v1.sh
 
 # Mintstick
 
-sh install-mintstick-git-v1.sh
+#sh install-mintstick-git-v1.sh
 
 ###############################################################################################
 
