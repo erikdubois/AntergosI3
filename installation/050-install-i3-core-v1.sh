@@ -27,7 +27,11 @@ else
 
 fi
 
-########        C O R E   i 3   A  U R    #########
+
+
+
+
+
 
 # alternative menu faster and only desktop apps
 
@@ -83,7 +87,8 @@ else
 
 fi
 
-# alternative menu for i3 with larger fonts and font choice 
+
+# alternative dmenu
 
 echo "################################################################"
 echo "dmenu-xft for bigger fonts - Remove dmenu -- yes"
@@ -136,6 +141,12 @@ else
 	fi
 
 fi
+
+
+
+
+
+
 
 
 # alternative information bar
@@ -193,10 +204,13 @@ else
 fi
 
 
+
 echo "################################################################"
-echo "i 3 with gaps next git - Remove xcb-util-cursor -- yes"
-echo "i 3 with gaps next git - Remove i3wm -- yes"
+echo "i3 gaps next git"
 echo "################################################################"
+
+
+
 
 # i3 with gaps between windows
 
