@@ -28,7 +28,7 @@ sudo pacman -S --noconfirm --needed gvfs-smb
 # testparm will check the conf file for errors
 
 # red hat samba sharing config 
-packer --noconfirm --noedit system-config-samba
+packer -S --noconfirm --noedit system-config-samba
 
 echo "Run system-config-samba to set up shares"
 

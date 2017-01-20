@@ -470,10 +470,7 @@ exec network-manager-applet
 exec dropbox start
 # insync
 exec insync start
-# volume
-exec pasystray
-#exec volti
-#exec volumeicon
+
 #variety
 exec variety
 
@@ -965,7 +962,7 @@ bindsym control+Shift+Escape exec gnome-system-monitor;focus
 #bindsym control+Shift+Escape exec xfce4-taskmanager;focus
 
 #settings
-bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec cinnamon-settings
 #bindsym control+mod1+n exec gnome-control-center
 #bindsym control+mod1+n exec mate-control-center
 #bindsym control+mod1+n exec xfce4-settings-manager
