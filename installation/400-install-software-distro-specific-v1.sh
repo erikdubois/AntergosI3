@@ -51,6 +51,10 @@ systemctl start org.cups.cupsd.service
 
 sudo pacman -S networkmanager --noconfirm --needed
 sudo pacman -S network-manager-applet --noconfirm --needed
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
+
+
 # if you want a networkmanager and applet mostly for laptop/wireless as
 # lan just works and gives no added value
 
