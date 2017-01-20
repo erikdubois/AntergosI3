@@ -40,11 +40,11 @@ This folder installation contains all the scripts you will ever need for your i3
 We start the installation scripts of all the needed software via the terminal.
 Go inside the installation folder and run these or even more.
  
-    10-install-fastest-antergos-mirrors-vx.sh -Antergos servers
-    20-install-fastest-mirrors-vx - if you want the fastest servers - change countries
-    30-install-xorg-vx.sh - if you have a base system without xserver
-    40-install-packer-for-aur-make-build-v1  - if you do not have packer installed for AUR
-    50-install-i3-core-vx.sh - install standard i3 and afterwards i3 with gaps
+    010-install-fastest-antergos-mirrors-vx.sh -Antergos servers
+    020-install-fastest-mirrors-vx - if you want the fastest servers - change countries
+    030-install-xorg-vx.sh - if you have a base system without xserver
+    040-install-packer-for-aur-make-build-v1  - if you do not have packer installed for AUR
+    050-install-i3-core-vx.sh - install standard i3 and afterwards i3 with gaps
     100-install-core-software-vx.sh
     200-install-extra-software-vx.sh
     300-install-themes-icons-cursors-conky-plank-vx.sh
