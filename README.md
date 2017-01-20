@@ -1,6 +1,6 @@
 # Antergos Base + i3 windows manager
 
-We assume you know how to install Antergos Base option from the usb/dvd.
+We assume you know how to install Antergos Base from the usb/dvd.
 
 ##Keyboard issues
 
@@ -17,12 +17,13 @@ Normally everything will be up-to-date.
 
 ## Getting the installation files
 
-The idea is to download the i3 github files :
+The idea is to download the i3 github files and start running the scripts:
 
     sudo pacman -S git
     git clone https://github.com/erikdubois/Antergosi3.git
 
-The content of this folder should be copied to a hidden folder in your home directory with the name  ~/.config/i3. Create it when it does not exist
+The content of this folder should be copied to a hidden folder in your home directory with the name  ~/.config/i3. 
+
 
     ls
     mv AntergosI3/ ~/.config/i3
@@ -31,7 +32,7 @@ The content of this folder should be copied to a hidden folder in your home dire
     cd installation
     ls
 
-This folder contains all the settings you will ever need for your i3wm.
+This folder installation contains all the scripts you will ever need for your i3wm.
 
 
 ##Software installation
