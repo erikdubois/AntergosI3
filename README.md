@@ -39,7 +39,8 @@ This folder contains all the settings you will ever need for your i3wm.
 We start the installation scripts of all the needed software via the terminal.
 Go inside the installation folder and run these or even more.
  
-    _0-install-arch-i3-mirrors-vx - if you want the fastest servers - change countries
+    _0-install-fastest-mirrors-vx - if you want the fastest servers - change countries
+    _0-install-fastest-antergos-mirrors-vx.sh -Antergos servers
     _0-install-xorg-vx.sh - if you have a base system without xserver
     0-install-packer-for-aur-make-build-v1  - if you do not have packer installed for AUR
     0-install-i3-core-vx.sh - install standard i3 and afterwards i3 with gaps
