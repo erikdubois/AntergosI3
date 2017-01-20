@@ -8,11 +8,6 @@
 # AS ALLWAYS, KNOW WHAT YOU ARE DOING.
 #======================================================================================
 
-echo "################################################################"
-echo "####  T O O L  T O  F I N D  F A S T E S T   S E R V E R S   ###"
-echo "################################################################"
-
-
 
 echo "################################################################"
 echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
@@ -23,7 +18,7 @@ sudo rankmirrors -n 0 /etc/pacman.d/antergos-mirrorlist > /tmp/antergos-mirrorli
 
 
 echo "################################################################"
-echo "####       fastest servers from neighbourhood saved          ###"
+echo "####       fastest servers in your neighbourhood saved       ###"
 echo "################################################################"
 
 
