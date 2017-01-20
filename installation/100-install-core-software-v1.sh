@@ -15,7 +15,7 @@
 sudo pacman -S --noconfirm --needed arc-gtk-theme archey3 baobab bleachbit catfish clementine clipit curl
 sudo pacman -S --noconfirm --needed darktable dconf-editor
 sudo pacman -S --noconfirm --needed dmidecode 
-sudo pacman -S --noconfirm --needed evince evolution filezilla 
+sudo pacman -S --noconfirm --needed evince evolution filezilla firefox
 sudo pacman -S --noconfirm --needed galculator geary gimp git glances gnome-disk-utility 
 sudo pacman -S --noconfirm --needed gnome-font-viewer gnome-terminal gnome-tweak-tool 
 sudo pacman -S --noconfirm --needed gparted gpick grsync
