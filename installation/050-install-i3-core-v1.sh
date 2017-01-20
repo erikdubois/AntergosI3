@@ -23,7 +23,7 @@ if pacman -Qi i3-gaps-next-git &> /dev/null; then
 
 else 
 
-	sudo pacman -S --noconfirm --needed i3-wm i3lock i3status 
+#	sudo pacman -S --noconfirm --needed i3-wm i3lock i3status 
 
 fi
 
