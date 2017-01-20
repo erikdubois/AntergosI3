@@ -9,12 +9,6 @@ We assume you know how to install Antergos Base from the usb/dvd.
 Look online for more info : https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console
 
 
-##Update your system.
-
-Normally everything will be up-to-date.
-    
-    sudo pacman -Syu
-
 ## Getting the installation files
 
 The idea is to download the i3 github files and start running the scripts:
