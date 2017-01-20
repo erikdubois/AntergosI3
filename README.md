@@ -19,54 +19,28 @@ https://i3wm.org/
 
 # The latest screenshots
 
-![Screenshots](http://i.imgur.com/43QNXCN.jpg)
-
-
 # What can you achieve?
 
-There is a fork where you can choose to have gaps between the windows.
-
-Yltra Flat Orange on Antergos I3
-Icons can be found at github
-https://github.com/erikdubois/Yltra-Flat - with gaps
-
-![Screenshots](http://i.imgur.com/xtILBj5.jpg)
-
-
-with gaps
 ![Screenshots](http://i.imgur.com/gvw6Uf7.jpg)
 
 
-no gaps
 ![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
 
 
-
-with gaps
 ![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
 
 
-
-no gaps
 ![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
 
 
-with gaps
 ![Screenshots](http://i.imgur.com/N9sNc4m.jpg)
 
 
-no gaps
 ![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
 
 
-with gaps
 ![Screenshots](http://i.imgur.com/wYxi8dI.jpg)
 
-
-
-#What can you do if the script does not execute?
-
-Explained at the bottom.
 
 
 
