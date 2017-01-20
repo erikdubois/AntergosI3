@@ -983,10 +983,23 @@ bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
 #bindsym $mod+F8 exec caja;workspace 8;focus
 #bindsym $mod+F8 exec thunar;workspace 8;focus
 
+#file managers
+
+exec nemo --no-desktop
+#exec nautilus --no-desktop
+#exec caja
+#exec thunar
+
+#filemanager focus
+for_window [class="Nemo"] focus
+for_window [class="Nautilus"] focus
+for_window [class="Caja"] focus
+for_window [class="Thunar"] focus
+
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 #bindsym $mod+Shift+Return exec caja; workspace 8;focus
 #bindsym $mod+Shift+Return exec thunar; workspace 8;focus
-#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
@@ -994,7 +1007,9 @@ bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec thunar;workspace 8;focus
 
 
+# USER APPLICATIONS TO START AT BOOT
 
+#sublime-text
 #exec subl
 exec subl3
 
@@ -1007,14 +1022,13 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # update
+
+#Linux Mint
 #exec mintupdate-launcher
+
+# Arch
 exec pamac-tray
 
 # bluetooth
-#exec blueberry-tray
-exec --no-startup-id blueman-applet
-
-#settings
-#bindsym control+mod1+n exec cinnamon-settings
-bindsym control+mod1+n exec gnome-control-center
-
+exec blueberry-tray
+#exec --no-startup-id blueman-applet
