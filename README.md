@@ -36,6 +36,9 @@ https://www.youtube.com/watch?v=NvbRuIzYldU
 
 This [article](http://erikdubois.be/install-linux-mint-18-1-cinnamon-customize/) also explains you how to burn an iso to an usb.
 
+# I3wm
+
+More info about i3wm can be found [here](https://i3wm.org/docs/userguide.html).
 
 
 ## Getting the installation files
@@ -137,6 +140,12 @@ If you finished installing the scripts mentioned above then the magic can start.
 
 ***
 
+# After rebooting
+
+## Firefox
+
+I like the dark themes. But some of the websites (like youtube) give you unreadable inputboxes. After rebooting and starting firefox once (normally firefox is started on workspace 1), you can run script 700 to copy/paste the solution to the right place.
+
 
 ##Single or Dual monitor
 
@@ -158,6 +167,7 @@ There is also a script included that might help. This is to tell the system whic
 
     dualscreen_autoset.sh
 
+More info can be found on the official website of i3wm : https://i3wm.org/docs/userguide.html
 
 ##Variety 
 
