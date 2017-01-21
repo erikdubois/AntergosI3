@@ -97,6 +97,34 @@ Some of the applications that will be installed are
 There are other scripts for more applications. If needed, you can install them individually.
 
 
+
+##Setting i3 to start at boot
+
+I have automated this process in the script 600. 
+
+**Read the script before executing.** 
+
+It will also create folders if not present. You may want to delete some of those.
+
+
+    600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
+
+
+
+**You need to change the name in the file**
+
+    installation/settings/autologin@.service
+
+**to your own login name.**
+
+Because of these changes the $mod+shift+e will exit i3 but instantly log us back in. In essence it has become a relaunch i3 option and it is very fast. 
+
+Exiting i3wm is done via $mod+Pause/Break and choosing the letters in the bottom bar. ($mod is windows or super key)
+
+
+
+
+
 ## Reboot
 
 If you finished installing the scripts mentioned above then the magic can start.
@@ -170,7 +198,7 @@ Ofcourse you can install new themes. I like the **Arc** theme which I will use i
 
 I install the **original blue** Arc theme but also my personally created Arc themes (see Arc Colora folder).
 
-    install-gtk-arc-theme-vx.sh         (script 300)
+    install-gtk-arc-theme-git-vx.sh         (script 300)
 
 Select your theme with **lxappearance**.
 
@@ -309,30 +337,6 @@ Sardi icons and all plank themes
 
 Read more on plank e.g. how to autostart plank on boot : http://erikdubois.be/category/linux/plank/
 
-
-
-##Setting i3 to start at boot
-
-I have automated this process in the script 600. 
-
-**Read the script before executing.** 
-
-It will also create folders if not present. You may want to delete some of those.
-
-
-    600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
-
-
-
-**You need to change the name in the file**
-
-    installation/settings/autologin@.service
-
-**to your own login name.**
-
-Because of these changes the $mod+shift+e will exit i3 but instantly log us back in. In essence it has become a relaunch i3 option and it is very fast. 
-
-Exiting i3wm is done via $mod+Pause/Break and choosing the letters in the bottom bar. ($mod is windows or super key)
 
 
 
