@@ -612,6 +612,7 @@ for_window [class="Imagewriter"] floating enable
 #for_window [class="Hexchat"] floating disable
 for_window [class="Xfce4-settings-manager"] floating disable
 for_window [class="Gnome-control-center"] floating disable
+for_window [class="Gnome-terminal"] focus
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart

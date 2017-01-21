@@ -1,9 +1,11 @@
 # Antergos Base + i3 windows manager
 
-We assume you know how to install Antergos Base from the usb/dvd.
+We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options.
 
 
 ##Keyboard issues
+
+Since I am living in a part of the world where you have an azerty keyboard, I need to set mine from the start.
 
     sudo loadkeys be-latin1
 
