@@ -369,10 +369,11 @@ This works as well. Not implemented this time around.
 
 Since this is a test pc I have included all **testing repo's**. Not recommended on a work pc.
 
-
 You can get more [pacman info here.](https://wiki.archlinux.org/index.php/pacman)
 
 I have choosen this time to go for these 'all out experimental' settings. 
+
+    sudo subl3 /etc/pacman.conf
 
 Maybe you like "ILoveCandy" too.
 
@@ -493,6 +494,10 @@ Maybe you like "ILoveCandy" too.
 
 The file **/etc/pamac.conf** can be changed to your own liking. I am going for the following changes on my experimental pc.
 
+    sudo subl3 /etc/pamac.conf
+
+Command to open the file.
+
     ### Pamac configuration file
 
     ## When removing a package, also remove those dependencies
@@ -526,7 +531,11 @@ Grub is waiting standard 5 seconds to boot... I want it to wait only 1 second.
 
 You can do so by installing grubcustomizer (see script) and using the graphical (gui) approach or via terminal.
 
-Edit this file with a text-editor. I recommend sublime-text. It lets you save on restricted area's and asks the root password for it.
+Edit this file with a text-editor. I recommend sublime-text.
+
+        sudo subl3 /etc/default/grub
+
+It lets you save on restricted area's and asks the root password for it.
 
     /etc/default/grub
 
@@ -536,7 +545,7 @@ Change this line to the seconds you want to wait for booting up
 
 Run this command to update the grub parameters
 
-    grub-mkconfig  -o /boot/grub/grub.cfg
+    sudo grub-mkconfig  -o /boot/grub/grub.cfg
 
 Read more [here about grub](https://wiki.archlinux.org/index.php/GRUB)
 
