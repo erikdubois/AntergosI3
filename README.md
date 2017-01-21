@@ -7,7 +7,7 @@ We assume you know how to install Antergos Base from the usb/dvd.
 
     sudo loadkeys be-latin1
 
-Look online for more info : https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console
+Look online for [more info and more keyboards](https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console)
 
 
 
@@ -117,6 +117,176 @@ More info : https://wiki.archlinux.org/index.php/Xinit
 Type this in the terminal now
 
     startx
+
+
+##Change how pacman should work
+
+
+You can get more info at https://wiki.archlinux.org/index.php/pacman.
+
+I have choosen this time to go for these settings. 
+
+Maybe you like "ILoveCandy" too.
+
+    #
+    # /etc/pacman.conf
+    #
+    # See the pacman.conf(5) manpage for option and repository directives
+
+    #
+    # GENERAL OPTIONS
+    #
+    [options]
+    # The following paths are commented out with their default values listed.
+    # If you wish to use different paths, uncomment and update the paths.
+    #RootDir     = /
+    #DBPath      = /var/lib/pacman/
+    #CacheDir    = /var/cache/pacman/pkg/
+    #LogFile     = /var/log/pacman.log
+    #GPGDir      = /etc/pacman.d/gnupg/
+    #HookDir     = /etc/pacman.d/hooks/
+    HoldPkg     = pacman glibc
+    #XferCommand = /usr/bin/curl -C - -f %u > %o
+    #XferCommand = /usr/bin/wget --passive-ftp -c -O %o %u
+    #CleanMethod = KeepInstalled
+    #UseDelta    = 0.7
+    Architecture = auto
+
+    # Pacman won't upgrade packages listed in IgnorePkg and members of IgnoreGroup
+    #IgnorePkg   =
+    #IgnoreGroup =
+
+    #NoUpgrade   =
+    #NoExtract   =
+
+    # Misc options
+    UseSyslog
+    Color
+    TotalDownload
+    CheckSpace
+    VerbosePkgLists
+    ILoveCandy
+
+    # By default, pacman accepts packages signed by keys that its local keyring
+    # trusts (see pacman-key and its man page), as well as unsigned packages.
+    SigLevel    = Required DatabaseOptional
+    LocalFileSigLevel = Optional
+    #RemoteFileSigLevel = Required
+
+    # NOTE: You must run `pacman-key --init` before first using pacman; the local
+    # keyring can then be populated with the keys of all official Arch Linux
+    # packagers with `pacman-key --populate archlinux`.
+
+    #
+    # REPOSITORIES
+    #   - can be defined here or included from another file
+    #   - pacman will search repositories in the order defined here
+    #   - local/custom mirrors can be added here or in separate files
+    #   - repositories listed first will take precedence when packages
+    #     have identical names, regardless of version number
+    #   - URLs will have $repo replaced by the name of the current repo
+    #   - URLs will have $arch replaced by the name of the architecture
+    #
+    # Repository entries are of the format:
+    #       [repo-name]
+    #       Server = ServerName
+    #       Include = IncludePath
+    #
+    # The header [repo-name] is crucial - it must be present and
+    # uncommented to enable the repo.
+    #
+
+    # The testing repositories are disabled by default. To enable, uncomment the
+    # repo name header and Include lines. You can add preferred servers immediately
+    # after the header, and they will be used before the default mirrors.
+
+
+    #[antergos-staging]
+    #SigLevel = PackageRequired
+    #Server = http://mirrors.antergos.com/$repo/$arch/
+
+    [antergos]
+    SigLevel = PackageRequired
+    Include = /etc/pacman.d/antergos-mirrorlist
+
+    [testing]
+    Include = /etc/pacman.d/mirrorlist
+
+    [core]
+    Include = /etc/pacman.d/mirrorlist
+
+    [extra]
+    Include = /etc/pacman.d/mirrorlist
+
+    [community-testing]
+    Include = /etc/pacman.d/mirrorlist
+
+    [community]
+    Include = /etc/pacman.d/mirrorlist
+
+    # If you want to run 32 bit applications on your x86_64 system,
+    # enable the multilib repositories as required here.
+
+    [multilib-testing]
+    Include = /etc/pacman.d/mirrorlist
+
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
+
+    # An example of a custom package repository.  See the pacman manpage for
+    # tips on creating your own repositories.
+    #[custom]
+    #SigLevel = Optional TrustAll
+    #Server = file:///home/custompkgs
+
+
+
+##Change the settings of pamac to include also updates of AUR
+
+The files /etc/pamac.conf can be changed to your own liking. I am going for the following changes
+
+    ### Pamac configuration file
+
+    ## When removing a package, also remove those dependencies
+    ## that are not required by other packages (recurse option):
+    RemoveUnrequiredDeps
+
+    ## How often to check for updates, value in hours (0 to disable):
+    RefreshPeriod = 6
+
+    ## When there are no updates available, hide the tray icon:
+    #NoUpdateHideIcon
+
+    ## Allow Pamac to search and install packages from AUR:
+    EnableAUR
+
+    ## When AUR support is enabled search in AUR by default:
+    #SearchInAURByDefault
+
+    ## When AUR support is enabled check for updates from AUR:
+    CheckAURUpdates
+
+    ## Do not ask for confirmation when building packages:
+    NoConfirmBuild
+
+
+##Change grub to boot faster
+
+Grub is waiting standard 5 seconds to boot... I want it to wait only 1 second.
+
+You can do so by installing grubcustomizer and using the graphical (gui) approach or via terminal.
+
+    /etc/default/grub
+
+Change this line to the seconds you want to wait for booting up
+
+    GRUB_TIMEOUT="1"
+
+Run this command to update the grub parameters
+
+    grub-mkconfig  -o /boot/grub/grub.cfg
+
+Read more here : https://wiki.archlinux.org/index.php/GRUB
 
 
 ##Change the theme
