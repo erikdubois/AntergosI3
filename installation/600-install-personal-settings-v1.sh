@@ -29,6 +29,7 @@ echo "Creating all folders"
 
 
 echo "Moving files to start i3wm"
+echo "Sardi icons, Arc theme and noto font"
 
 cp settings/.bash_profile ~/
 cp settings/.bashrc ~/
@@ -36,6 +37,18 @@ cp settings/.gtkrc-2.0 ~/
 cp settings/.xinitrc ~/
 cp settings/.zlogin ~/
 cp settings/.zshrc ~/
+
+echo "Moving files to autostart X at boot"
+# http://unix.stackexchange.com/questions/42359/how-can-i-autologin-to-desktop-with-systemd
+
+echo "Did you change the autologin@.service file to include your own login ???"
+
+sudo cp /usr/lib/systemd/system/getty@.service /etc/systemd/system/autologin@.service
+cp settings/autologin@.service /etc/systemd/system/
+sudo ln -s /etc/systemd/system/autologin@.service /etc/systemd/system/getty.target.wants/getty@tty1.service
+sudo systemctl enable autologin@tty1.service
+sudo systemctl start autologin@tty1.service
+
 
 
 
