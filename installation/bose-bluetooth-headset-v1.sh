@@ -16,6 +16,11 @@ sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez b
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
+
+echo "set with bluetooth icon in bottom right corner"
+echo "change with pavucontrol to have a2dp sink"
+
+
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"
