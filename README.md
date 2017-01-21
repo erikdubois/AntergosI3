@@ -286,7 +286,7 @@ It will also create folders if not present. You may want to delete some of those
 
 
 
-**You need to change the name in the file **
+**You need to change the name in the file**
 
     installation/settings/autologin@.service
 
