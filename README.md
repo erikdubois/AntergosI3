@@ -98,13 +98,15 @@ There are other scripts for more applications. If needed, you can install them i
 
 
 
-##Setting i3 to start at boot
+##Setting i3 to autologin and autostart i3
 
 I have automated this process in the script 600. 
 
 **Read the script before executing.** 
 
 It will also create folders if not present. You may want to delete some of those.
+
+It will put all necessary files/commands in the right places (startx, xintrc,...)
 
 
     600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
@@ -117,9 +119,10 @@ It will also create folders if not present. You may want to delete some of those
 
 **to your own login name.**
 
-Because of these changes the $mod+shift+e will exit i3 but instantly log us back in. In essence it has become a relaunch i3 option and it is very fast. 
+Because of these changes the $mod+shift+e will exit i3 but instantly log you back in. In essence it has become a relaunch i3 option and it is very fast. 
 
 Exiting i3wm is done via $mod+Pause/Break and choosing the letters in the bottom bar. ($mod is windows or super key)
+Shift+S is shutdown.
 
 
 
