@@ -43,13 +43,11 @@ echo "Moving files to autostart X at boot"
 
 echo "Did you change the autologin@.service file to include your own login ???"
 
-sudo cp /usr/lib/systemd/system/getty@.service /etc/systemd/system/autologin@.service
-cp settings/autologin@.service /etc/systemd/system/
-sudo ln -s /etc/systemd/system/autologin@.service /etc/systemd/system/getty.target.wants/getty@tty1.service
+#sudo cp /usr/lib/systemd/system/getty@.service /etc/systemd/system/autologin@.service
+sudo cp settings/autologin@.service /etc/systemd/system/
+sudo ln -sf /etc/systemd/system/autologin@.service /etc/systemd/system/getty.target.wants/getty@tty1.service
 sudo systemctl enable autologin@tty1.service
 sudo systemctl start autologin@tty1.service
-
-
 
 
 echo "################################################################"
