@@ -2,11 +2,25 @@
 
 We assume you know how to install Antergos Base from the usb/dvd.
 
+
 ##Keyboard issues
 
     sudo loadkeys be-latin1
 
 Look online for more info : https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console
+
+
+
+##Time issues
+
+My time was set as UTC. Type this command to put your computer in the right time zone.
+
+    sudo ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
+
+With Tab completion you can easily find a suitable place on earth. Upon next boot it will be correct.
+
+More info : https://wiki.archlinux.org/index.php/time#Set_clock
+
 
 
 ## Getting the installation files
