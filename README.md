@@ -1,6 +1,33 @@
 # Antergos Base + i3 windows manager with gaps
 
-We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options.
+# What can you achieve
+
+
+![Screenshots](http://i.imgur.com/gvw6Uf7.jpg)
+
+
+![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
+
+
+![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
+
+
+![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
+
+
+![Screenshots](http://i.imgur.com/N9sNc4m.jpg)
+
+
+![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
+
+
+![Screenshots](http://i.imgur.com/wYxi8dI.jpg)
+
+
+# Installation of Antergos Base and i3wm
+
+
+We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options in the installer.
 
 
 ##Keyboard issues
@@ -19,7 +46,7 @@ My time was set as UTC. Type this command to put your computer in the right time
 
     sudo ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
 
-With Tab completion you can easily find a suitable place on earth. Upon next boot it will be correct.
+With Tab completion (pressing TAB twice) you can easily find a suitable place on earth. Upon next boot it will be correct.
 
 More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clock)
 
@@ -29,12 +56,12 @@ More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clo
 
 You are left with a black screen and a prompt. This is your terminal or tty.
 
-The idea is to download the i3 github files and start running the scripts, rather then typing the commmand by hand. In this manner you can build up your knowledge. And next time you install Antergos I3 the installation will even go smoother.
+The idea is to download the i3 github files and start running the scripts, rather then typing the commmands by hand. In this manner you can build up your knowledge and perfect your scripts (and its fun to see it work). And next time you install Antergos I3 the installation will even go smoother.
 
     sudo pacman -S git
     git clone https://github.com/erikdubois/Antergosi3.git
 
-The content of this folder should be copied to a hidden folder in your home directory with the name  ~/.config/i3. 
+The **content** of this downloaded folder should be moved to a hidden folder in your home directory with the name  ~/.config/i3. 
 
 
     ls                                    (list files/directories - look around)
@@ -83,9 +110,175 @@ There are other scripts for more applications. If needed, you can install them i
 
 
 
+
+##Change the theme
+
+Changing themes should be done in i3wm with these two. 
+
+    lxappearance and qtconfig-qt4.
+ 
+ It is good to know the files can be manually edited if you run in problems.
+
+    ~/.gtkrc-2.0                    (script 600)   
+    ~/.config/gtk-3.0/settings.ini  (script 600)
+
+
+
+
+##Install Arc Theme
+
+
+Ofcourse you can install new themes. I like the **Arc** theme which I will use in the later screenshots. 
+
+I install the **original blue** Arc theme but also my personally created Arc themes (see Arc Colora folder).
+
+    install-gtk-arc-theme-vx.sh         (script 300)
+
+Select your theme with **lxappearance**.
+
+
+
+##Install your individual Arc Theme
+
+You can change the blue accent colour from the Arc theme with these scripts to **any colour** you like : 
+
+Read here for more info on Arc Based Themes : http://erikdubois.be/category/themes/arc-based-themes/
+
+The contents of Arc Colora has been copied to your ~/.themes folder with script 600.
+
+More info about [Arc Colora.](https://github.com/erikdubois/Arc-Theme-Colora)
+
+
+
+
+##Download the Sardi icons
+
+You can install the sardi icons via these scripts but they have been already installed via script 300.
+
+    icons-sardi-vx.sh
+
+This icon theme can be downloaded at sourceforge.
+
+http://sourceforge.net/projects/sardi/
+
+You can also use
+
+    - packer -S sardi-icons 
+    - pacaur -S sardi-icons 
+    - yaourt -S sardi-icons 
+
+
+![Screenshots](http://i.imgur.com/CUj0D3G.jpg)
+
+
+Sardi is **meant to be changed by the users**. You can use scripts to change the hexadecimal colour code in about 3 seconds.
+
+
+Start your reading about Sardi here : http://erikdubois.be/overview-sardi-icons-version-9-sardi-extra-icons/
+
+Follow the collection on google+ : https://plus.google.com/u/0/collection/YFP-LB
+
+The most recent pictures can be found there.
+
+More documentation on http://erikdubois.be/category/sardi-icons/
+
+
+##Download the Sardi-extra icons
+
+They have been downloaded in script 300.
+
+There is also a collection of **Sardi Extra** icons at 
+
+https://github.com/erikdubois/Sardi-Extra
+
+These icons can be downloaded but will not be maintained. Nor are they part of the core icons of Sardi. They are the result of ideas and scripts that are included in Sardi icons.
+
+![Screenshots](http://i.imgur.com/sPo65Pi.jpg)
+
+More documentation on http://erikdubois.be/category/sardi-icons/
+
+
+##Download the Surfn icons
+
+They have been downloaded in script 300.
+
+For ease of installation I use the script
+
+    - icons-surfn-vx.sh
+
+You can also use
+
+    - packer -S surfn-icons 
+    - pacaur -S surfn-icons 
+    - yaourt -S surfn-icons 
+
+
+![Screenshots](http://i.imgur.com/BoacWMK.jpg)
+
+
+
+More info can be found here : https://github.com/erikdubois/Surfn
+
+
+
+##Install the Aureola conky collection
+
+They have been downloaded in script 300. They do not run yet.
+
+
+This is an exercise in writing conky configurations in lua syntax.
+
+
+In above screenshots you can see the conky's at work.
+
+
+More information can be found here : http://erikdubois.be/category/linux/aureola/
+
+
+##Change the cursor
+
+
+I like the breeze cursors.
+
+
+    install-breeze-cursor-theme-v1
+
+![Screenshots](http://i.imgur.com/wHp0I9s.png)
+
+    
+##Install the plank and download 100+ themes
+
+NOT RELEVANT for i3wm. I leave it in for general information.
+
+Plank is installed via the main scripts.
+
+If you want to install 100+ plank themes, you need to run this script : 
+
+    plank-themes-vx.sh
+
+Find plank in the menu and start it. <b>CTRL + Right-click</b> on the plank and choose preferences
+and put in on top. 
+
+Surfn icons and all plank themes
+
+![Screenshots](http://i.imgur.com/CRfb4Qo.gif)
+
+Sardi icons and all plank themes
+
+![Screenshots](http://i.imgur.com/dnmq1g0.gif)
+
+
+
+Read more on plank e.g. how to autostart plank on boot : http://erikdubois.be/category/linux/plank/
+
+
+
 ## setting i3 to start at boot
 
-I have automated this process in the script 600. Read the script before executing. 
+I have automated this process in the script 600. 
+
+**Read the script before executing.** 
+
 It will also create folders if not present. You may want to delete some of those.
 
 
@@ -101,12 +294,15 @@ It will also create folders if not present. You may want to delete some of those
 
 
 
+
 ##Change how pacman should work
 
+Since this is a test pc I have included all **testing repo's**. Not recommended on a work pc.
 
-You can get more info at https://wiki.archlinux.org/index.php/pacman.
 
-I have choosen this time to go for these settings. 
+You can get more [pacman info here.](https://wiki.archlinux.org/index.php/pacman)
+
+I have choosen this time to go for these 'all out experimental' settings. 
 
 Maybe you like "ILoveCandy" too.
 
@@ -183,9 +379,9 @@ Maybe you like "ILoveCandy" too.
     # after the header, and they will be used before the default mirrors.
 
 
-    #[antergos-staging]
-    #SigLevel = PackageRequired
-    #Server = http://mirrors.antergos.com/$repo/$arch/
+    [antergos-staging]
+    SigLevel = PackageRequired
+    Server = http://mirrors.antergos.com/$repo/$arch/
 
     [antergos]
     SigLevel = PackageRequired
@@ -225,7 +421,7 @@ Maybe you like "ILoveCandy" too.
 
 ##Change the settings of pamac to include also updates of AUR
 
-The files /etc/pamac.conf can be changed to your own liking. I am going for the following changes
+The file **/etc/pamac.conf** can be changed to your own liking. I am going for the following changes on my experimental pc.
 
     ### Pamac configuration file
 
@@ -252,11 +448,15 @@ The files /etc/pamac.conf can be changed to your own liking. I am going for the 
     NoConfirmBuild
 
 
+
+
 ##Change grub to boot faster
 
 Grub is waiting standard 5 seconds to boot... I want it to wait only 1 second.
 
-You can do so by installing grubcustomizer and using the graphical (gui) approach or via terminal.
+You can do so by installing grubcustomizer (see script) and using the graphical (gui) approach or via terminal.
+
+Edit this file with a text-editor. I recommend sublime-text. It lets you save on restricted area's and asks the root password for it.
 
     /etc/default/grub
 
@@ -268,148 +468,10 @@ Run this command to update the grub parameters
 
     grub-mkconfig  -o /boot/grub/grub.cfg
 
-Read more here : https://wiki.archlinux.org/index.php/GRUB
+Read more [here about grub](https://wiki.archlinux.org/index.php/GRUB)
 
 
-##Change the theme
 
-Sometimes you can change the present theme to its dark equivalent. This is the case in Gnome/Budgie. 
-In the gnome-tweak-tool you can change this. Here we will have to do this with 
-
-    lxappearance and qtconfig-qt4.
-    
-
-##Install Arc Theme
-
-
-Ofcourse you can install new themes. I like the **Arc** theme which I will use in the later screenshots. 
-
-I install the **original blue** Arc theme but also my personally created Arc themes (see Arc Colora folder).
-
-    install-gtk-arc-theme-vx.sh
-
-##Install your individual Arc Theme
-
-You can change the blue accent colour from the Arc theme with these scripts to **any colour** you like : 
-
-Read here for more info on Arc Based Themes : http://erikdubois.be/category/themes/arc-based-themes/
-
-More info about Arc Colora : https://github.com/erikdubois/Arc-Theme-Colora
-
-
-##Download the Sardi icons
-
-You can install the sardi icons via these scripts
-
-    icons-sardi-vx.sh
-
-This icon theme can be downloaded at sourceforge.
-
-http://sourceforge.net/projects/sardi/
-
-You can also use
-
-    - packer -S sardi-icons 
-    - pacaur -S sardi-icons 
-    - yaourt -S sardi-icons 
-
-
-![Screenshots](http://i.imgur.com/CUj0D3G.jpg)
-
-
-Sardi is **meant to be changed by the users**. You can use scripts to change the hexadecimal colour code in about 3 seconds.
-
-
-Start your reading about Sardi here : http://erikdubois.be/overview-sardi-icons-version-9-sardi-extra-icons/
-
-Follow the collection on google+ : https://plus.google.com/u/0/collection/YFP-LB
-
-The most recent pictures can be found there.
-
-More documentation on http://erikdubois.be/category/sardi-icons/
-
-
-##Download the Sardi-extra icons
-
-There is also a collection of **Sardi Extra** icons at 
-
-https://github.com/erikdubois/Sardi-Extra
-
-These icons can be downloaded but will not be maintained. Nor are they part of the core icons of Sardi. They are the result of ideas and scripts that are included in Sardi icons.
-
-![Screenshots](http://i.imgur.com/sPo65Pi.jpg)
-
-More documentation on http://erikdubois.be/category/sardi-icons/
-
-
-##Download the Surfn icons
-
-
-For ease of installation I use the script
-
-    - icons-surfn-vx.sh
-
-You can also use
-
-    - packer -S surfn-icons 
-    - pacaur -S surfn-icons 
-    - yaourt -S surfn-icons 
-
-
-![Screenshots](http://i.imgur.com/BoacWMK.jpg)
-
-
-
-More info can be found here : https://github.com/erikdubois/Surfn
-
-
-##Install the Aureola conky collection
-
-
-This is an exercise in writing conky configurations in lua syntax.
-
-
-In above screenshots you can see the conky's at work.
-
-
-More information can be found here : http://erikdubois.be/category/linux/aureola/
-
-
-##Change the cursor
-
-
-I like the breeze cursors.
-
-
-    install-breeze-cursor-theme-v1
-
-![Screenshots](http://i.imgur.com/wHp0I9s.png)
-
-    
-##Install the plank and download 100+ themes
-
-NOT RELEVANT for i3wm. I leave it in for general information.
-
-Plank is installed via the main scripts.
-
-If you want to install 100+ plank themes, you need to run this script : 
-
-    plank-themes-vx.sh
-
-Find plank in the menu and start it. <b>CTRL + Right-click</b> on the plank and choose preferences
-and put in on top. 
-
-Surfn icons and all plank themes
-
-![Screenshots](http://i.imgur.com/CRfb4Qo.gif)
-
-Sardi icons and all plank themes
-
-![Screenshots](http://i.imgur.com/dnmq1g0.gif)
-
-
-
-Read more on plank e.g. how to autostart plank on boot : http://erikdubois.be/category/linux/plank/
 
 
 ##Change from bash to zsh in your terminal
@@ -421,22 +483,6 @@ I like bash but I prefer zsh with lots of different themes from oh-my-zsh to spi
 
 
 ![Screenshots](http://i.imgur.com/kehYX70.jpg)
-
-
-##Download this github for ease of installation
-
-You can run any of these scripts by downloading the zip file from github. Go to the download folder and right-click to **Extract here**.
-Go inside the folder and right-click <b>in a blank space</b> to go to the terminal. Now your terminal is opened in this extracted folder.
-
-or 
-
-copy/paste this command in your terminal.
-
-
-    sudo pacman -S git
-    git clone https://github.com/erikdubois/ArchBudgieI3
-
-
 
 
 
@@ -592,54 +638,7 @@ I share my knowledge at http://erikdubois.be
 
 
 
-
-
-
-
-
-
-
-
-This is my configuration for I3 improved tiling to be used on Antergos.
-
-https://antergos.com/
-
-http://forum.antergos.com/
-
-In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a desktop environment.
-
-I do not work with a display manager. Xorg and I3 provide all the display you will ever need.
-
-I suggest you read up to better understand what a tiling window manager is.
-
-It is really great once you have mastered the most important shortcuts.
-
-https://i3wm.org/
-
-# The latest screenshots
-
-# What can you achieve?
-
-![Screenshots](http://i.imgur.com/gvw6Uf7.jpg)
-
-
-![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
-
-
-![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
-
-
-![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
-
-
-![Screenshots](http://i.imgur.com/N9sNc4m.jpg)
-
-
-![Screenshots](http://i.imgur.com/DFdoVEE.jpg)
-
-
-![Screenshots](http://i.imgur.com/wYxi8dI.jpg)
-
+# What can you achieve
 
 
 # A N T E R G O S    L I N U X 

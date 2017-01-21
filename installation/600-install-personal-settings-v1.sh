@@ -26,6 +26,9 @@ echo "Creating all folders"
 [ -d $HOME"/Pictures" ] || mkdir -p $HOME"/Pictures"
 [ -d $HOME"/Videos" ] || mkdir -p $HOME"/Videos"
 [ -d $HOME"/fonts" ] || mkdir -p $HOME"/fonts"
+[ -d $HOME"/.gimp-2.8" ] || mkdir -p $HOME"/.gimp-2.8"
+[ -d $HOME"/.gimp-2.8/scripts" ] || mkdir -p $HOME"/.gimp-2.8/scripts"
+[ -d $HOME"/.gimp-2.8/themes" ] || mkdir -p $HOME"/.gimp-2.8/themes"
 
 
 echo "Moving files to start i3wm"
@@ -37,6 +40,28 @@ cp settings/.gtkrc-2.0 ~/
 cp settings/.xinitrc ~/
 cp settings/.zlogin ~/
 cp settings/.zshrc ~/
+cp bookmarks ~/~/.config/gtk-3.0/
+cp settings.ini ~/~/.config/gtk-3.0/
+
+
+echo "Copy/pasting Arc Colora themes to ~/.themes"
+
+cp -r Arc\ Colora/* ~/.themes/
+
+
+echo "Making sure firefox looks great in dark themes"
+
+cp -r settings/firefox/chrome/ ~/.mozilla/firefox/*.default
+
+echo "Making sure gnome-screenshot saves in jpg - smaller in kb"
+
+sh settings/gnome-screenshot/set-gnome-screenshot-to-save-as-jpg.sh
+
+echo "Copy/pasting gimp scripts and themes"
+
+cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
+cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
+
 
 echo "Moving files to autostart X at boot"
 # http://unix.stackexchange.com/questions/42359/how-can-i-autologin-to-desktop-with-systemd
