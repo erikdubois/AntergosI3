@@ -610,12 +610,14 @@ or write an iso to the usb
 https://www.youtube.com/playlist?list=PLlloYVGq5pS4iLBVGkYnL4sqMmm08W5WT
 
 
-http://erikdubois.be/tag/i3/
 
-
-http://erikdubois.be/category/linux/i3/
 
 # Resources
+
+
+http://erikdubois.be/tag/i3/
+
+http://erikdubois.be/category/linux/i3/
 
 **Arch beginners guide**
 
