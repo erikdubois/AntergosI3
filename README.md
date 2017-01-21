@@ -767,7 +767,33 @@ With Tab completion (pressing TAB twice) you can easily find a suitable place on
 More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clock)
 
 
+#Bluetooth issues
 
+It is a the moment quite difficult to get Bose Comfort 35 Bluetooth to work an the many linux distributions.
+
+This will work for me.
+
+Run the script
+
+    bose-bluetooth-headset-v1
+
+Then reboot to be sure...
+
+Select the bluetooth icon in the bottom right corner. We trust it is there because of the blueberry application.
+
+Activate your bluetooth till you here "Ready to pair".
+
+Then press mod1 (windows) + D to go to our menu.
+
+Select everywhere the bose device and A2DP sink.
+
+![Screenshots](http://i.imgur.com/ott5Pos.jpg)
+
+![Screenshots](http://i.imgur.com/tT93Y06.png)
+
+Play some music. Powerdown your bose headphone and restart it. 
+
+You should have music now.
 
 
 #What can you do if the script does not execute?
