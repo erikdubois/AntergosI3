@@ -484,6 +484,11 @@ I like bash but I prefer zsh with lots of different themes from oh-my-zsh to spi
     ./install-zsh-vx.sh
 
 
+Do not forget to run this command line code manually to achieve zsh.
+
+    chsh erik -s /bin/zsh               (change to your login name)
+
+
 ![Screenshots](http://i.imgur.com/kehYX70.jpg)
 
 
