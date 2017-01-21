@@ -65,18 +65,18 @@ This **installation** folder contains all the scripts you will ever need for you
 We start the installation scripts of all the needed software via the terminal **in the right order**.
 Go inside the installation folder and run minimum these scripts. You can run the others once we are in a graphical environment.
  
-    010-install-fastest-antergos-mirrors-vx.sh              (Antergos servers)
-    020-install-fastest-arch-mirrors-vx                          (if you want the fastest servers - change countries)
-    030-install-xorg-vx.sh                                  (graphical environment needs xserver)
-    040-install-packer-for-aur-make-build-v1                (packer is aur helper)
-    050-install-i3-core-vx.sh                               (installing i3 with gaps)
-    100-install-core-software-vx.sh                         (software from standard repositories)
-    200-install-extra-software-vx.sh                        (software from AUR)
-    300-install-themes-icons-cursors-conky-plank-vx.sh      (beautify your system)
-    400-install-software-distro-specific-vx.sh              (specific software for i3wm)
-    500-install-samba-vx.sh                                 (if you want to share folder on your home network)
-    600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
-    700-firefox-for-dark-themes-settings-vx.sh              (run this one after reboot - firefox must have run once)
+    010-install-fastest-antergos-mirrors-vx.sh           (Antergos servers)
+    020-install-fastest-arch-mirrors-vx                  (if you want the fastest servers - change countries)
+    030-install-xorg-vx.sh                               (graphical environment needs xserver)
+    040-install-packer-for-aur-make-build-v1             (packer is aur helper)
+    050-install-i3-core-vx.sh                            (installing i3 with gaps)
+    100-install-core-software-vx.sh                      (software from standard repositories)
+    200-install-extra-software-vx.sh                     (software from AUR)
+    300-install-themes-icons-cursors-conky-plank-vx.sh   (beautify your system)
+    400-install-software-distro-specific-vx.sh           (specific software for i3wm)
+    500-install-samba-vx.sh                              (if you want to share folder on your home network)
+    600-install-personal-settings-vx.sh                  (necessary to be able to boot into i3 automatically)
+    700-firefox-for-dark-themes-settings-vx.sh           (run this one after reboot - firefox must have run once)
 
 Do not forget to type "./" in front of the name.
 
@@ -103,9 +103,8 @@ If you finished installing the scripts mentioned above then the magic can start.
 
     sudo reboot
 
+
 ***
-
-
 
 
 ##Single or Dual monitor
