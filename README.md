@@ -790,9 +790,11 @@ Then reboot to be sure...
 
 Select the bluetooth icon in the bottom right corner. We trust it is there because of the blueberry application.
 
-Activate your bluetooth till you here "Ready to pair".
+Activate your bluetooth headphone till you here "Ready to pair".
 
-Then press mod1 (windows) + D to go to our menu.
+Then press mod1 (windows) + D to go to our menu and look for this program. It has been installed.
+
+    pavucontrol
 
 Select everywhere the bose device and A2DP sink.
 
