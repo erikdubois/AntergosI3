@@ -11,18 +11,18 @@
 #
 ##################################################################################################################
 
-sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils bluez-firmware blueberry
-
-sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
-sudo systemctl daemon-reload
 
 
-echo "reboot your system then ..."
-echo "set with bluetooth icon in bottom right corner"
-echo "change with pavucontrol to have a2dp sink"
+echo "Making sure firefox looks great in dark themes"
+echo "You should run this script after you rebooted and are in i3."
+echo "Firefox must have started once. The directory will not exist otherwise."
+
+cp -r settings/firefox/chrome/ ~/.mozilla/firefox/*.default
+
+echo "reboot firefox to see the effect"
 
 
 echo "################################################################"
-echo "###################    T H E   E N D      ######################"
+echo "#########       firefox  settings installed     ################"
 echo "################################################################"
+

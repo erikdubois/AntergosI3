@@ -22,7 +22,7 @@ echo "Creating all folders"
 [ -d $HOME"/Desktop" ] || mkdir -p $HOME"/Desktop"
 [ -d $HOME"/Downloads" ] || mkdir -p $HOME"/Downloads"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
-[ -d $HOME"/Dropbox" ] || mkdir -p $HOME"/Dropbox"
+#[ -d $HOME"/Dropbox" ] || mkdir -p $HOME"/Dropbox" will be created by dropbox
 [ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
 [ -d $HOME"/Music" ] || mkdir -p $HOME"/Music"
 [ -d $HOME"/Pictures" ] || mkdir -p $HOME"/Pictures"
@@ -42,8 +42,8 @@ cp settings/.gtkrc-2.0 ~/
 cp settings/.xinitrc ~/
 cp settings/.zlogin ~/
 cp settings/.zshrc ~/
-cp bookmarks ~/~/.config/gtk-3.0/
-cp settings.ini ~/~/.config/gtk-3.0/
+cp settings/bookmarks ~/.config/gtk-3.0/
+cp settings/settings.ini ~/.config/gtk-3.0/
 
 
 echo "Copy/pasting Arc Colora themes to ~/.themes"
@@ -58,6 +58,7 @@ cp -r settings/firefox/chrome/ ~/.mozilla/firefox/*.default
 echo "Making sure gnome-screenshot saves in jpg - smaller in kb"
 
 sh settings/gnome-screenshot/set-gnome-screenshot-to-save-as-jpg.sh
+echo "Do not mind the message."
 
 echo "Copy/pasting gimp scripts and themes"
 
@@ -85,3 +86,7 @@ echo "################################################################"
 echo "#########       personal settings installed     ################"
 echo "################################################################"
 
+echo "Finally you can reboot and start computing"
+echo "You will be logged in automatically."
+echo "Type in the terminal the following code"
+echo "sudo reboot"
