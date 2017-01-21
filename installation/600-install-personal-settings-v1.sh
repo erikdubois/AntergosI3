@@ -16,6 +16,8 @@ echo "Creating all folders"
 
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 [ -d $HOME"/.config/conky" ] || mkdir -p $HOME"/.config/conky"
+[ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
+[ -d $HOME"/.config/variety/scripts" ] || mkdir -p $HOME"/.config/variety/scripts"
 [ -d $HOME"/.themes" ] || mkdir -p $HOME"/.themes"
 [ -d $HOME"/Desktop" ] || mkdir -p $HOME"/Desktop"
 [ -d $HOME"/Downloads" ] || mkdir -p $HOME"/Downloads"
@@ -61,6 +63,10 @@ echo "Copy/pasting gimp scripts and themes"
 
 cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
 cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
+
+echo "Copy/pasting scripts for feh/variety to work"
+
+cp settings/variety/* ~/.config/variety/scripts/
 
 
 echo "Moving files to autostart X at boot"
