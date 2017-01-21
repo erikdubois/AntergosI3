@@ -23,13 +23,13 @@ sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugl
 
 #Fonts
 
-sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
-sudo pacman -S ttf-droid --noconfirm --noconfirm --needed
-sudo pacman -S ttf-inconsolata --noconfirm --needed
+## sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed conflicts with ttf-google-fonts
+## sudo pacman -S ttf-droid --noconfirm --noconfirm --needed  conflicts with ttf-google-fonts
+## sudo pacman -S ttf-inconsolata --noconfirm --needed        conflicts with ttf-google-fonts
+sudo pacman -S noto-fonts --noconfirm --needed
 
 #Utilities
 
-sudo pacman -S gnome-disk-utility  --noconfirm --needed
 sudo pacman -S notify-osd  --noconfirm --needed
 sudo pacman -S lxappearance --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
@@ -61,13 +61,13 @@ sudo systemctl start NetworkManager.service
 # sudo pacman -S network-manager-applet --noconfirm
 
 
-echo "################################################################"
-echo "installing xbindkeys"
-echo "################################################################"
+#echo "################################################################"
+#echo "installing xbindkeys"
+#echo "################################################################"
 
-sudo pacman -S xbindkeys --noconfirm --needed
+#sudo pacman -S xbindkeys --noconfirm --needed
 
-echo "You need to put the config file in the root of your home folder"
+#echo "You need to put the config file in the root of your home folder"
 
 
         # S Y S T E M  T O O L S # 

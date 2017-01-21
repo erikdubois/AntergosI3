@@ -35,7 +35,7 @@ mv PKGBUILD\?h\=packer /tmp/packer/PKGBUILD
 
 cd /tmp/packer
 
-makepkg -i /tmp/packer
+makepkg -i /tmp/packer --noconfirm
 
 
 #sudo pacman -U /tmp/packer/packer-*.pkg.tar.xz

@@ -37,7 +37,7 @@ sh icons-surfn-v2.sh
 
 # Arc theme
 
-sh install-gtk-arc-theme-v1.sh
+sh install-gtk-arc-theme-git-v1.sh
 
 #############################################################################################
 

@@ -26,37 +26,21 @@
 
 # Installation of Antergos Base and i3wm
 
+We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options in the installer but one
 
-We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options in the installer.
+    apache (nginx) + Mariadb + PHP was not selected
 
+I used the application mintstick on Linux Mint or Antergos/Arch to burn an iso to an usb. 
 
-##Keyboard issues
+https://www.youtube.com/watch?v=NvbRuIzYldU
 
-Since I am living in a part of the world where you have an azerty keyboard, I need to set mine from the start.
-
-    sudo loadkeys be-latin1
-
-Look online for [more info and more keyboards](https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console)
-
-    localectl list-keymaps | less
-
-
-
-##Time issues
-
-My time was set as UTC. Type this command to put your computer in the right time zone.
-
-    sudo ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
-
-With Tab completion (pressing TAB twice) you can easily find a suitable place on earth. Upon next boot it will be correct.
-
-More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clock)
+This [article](http://erikdubois.be/install-linux-mint-18-1-cinnamon-customize/) also explains you how to burn an iso to an usb.
 
 
 
 ## Getting the installation files
 
-You are left with a black screen and a prompt. This is your terminal or tty.
+You are left with a black screen and a prompt. This is your terminal or tty. Login with your password.
 
 The idea is to download the i3 github files and start running the scripts, rather then typing the commmands by hand. In this manner you can build up your knowledge and perfect your scripts (and its fun to see it work). And next time you install Antergos I3 the installation will even go smoother.
 
@@ -82,7 +66,7 @@ We start the installation scripts of all the needed software via the terminal **
 Go inside the installation folder and run minimum these scripts. You can run the others once we are in a graphical environment.
  
     010-install-fastest-antergos-mirrors-vx.sh              (Antergos servers)
-    020-install-fastest-mirrors-vx                          (if you want the fastest servers - change countries)
+    020-install-fastest-arch-mirrors-vx                          (if you want the fastest servers - change countries)
     030-install-xorg-vx.sh                                  (graphical environment needs xserver)
     040-install-packer-for-aur-make-build-v1                (packer is aur helper)
     050-install-i3-core-vx.sh                               (installing i3 with gaps)
@@ -92,11 +76,13 @@ Go inside the installation folder and run minimum these scripts. You can run the
     400-install-software-distro-specific-vx.sh              (specific software for i3wm)
     500-install-samba-vx.sh                                 (if you want to share folder on your home network)
     600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
+    700-firefox-for-dark-themes-settings-vx.sh              (run this one after reboot - firefox must have run once)
 
 Do not forget to type "./" in front of the name.
 
 These scripts will point to some of the other scripts in the folder. So keep them together.
 
+TIP: script 400 got errors from dabase lock... Not sure why. BUT the scripts are build that way that you can rerun it and none of the already installed software will be re-installed. A second run of 400 installed the remaining applications. You can do this with any of the scripts.
 
 Some of the applications that will be installed are
 
@@ -109,6 +95,17 @@ Some of the applications that will be installed are
     ...
 
 There are other scripts for more applications. If needed, you can install them individually.
+
+
+## Reboot
+
+If you finished installing the scripts mentioned above then the magic can start.
+
+    sudo reboot
+
+***
+
+
 
 
 ##Single or Dual monitor
@@ -610,6 +607,10 @@ or write an iso to the usb
 https://www.youtube.com/playlist?list=PLlloYVGq5pS4iLBVGkYnL4sqMmm08W5WT
 
 
+http://erikdubois.be/tag/i3/
+
+
+http://erikdubois.be/category/linux/i3/
 
 # Resources
 
@@ -711,6 +712,36 @@ lxappearance is the first program I use to change themes, fonts, icons.
 
 # F  A  Q
 --------------------
+
+#Keyboard issues
+
+If you have selected the right option in the installation screens everything will be set. But sometimes things go wrong. For that reason I keep it in.
+
+Since I am living in a part of the world where you have an azerty keyboard, I need to set mine from the start.
+
+    sudo loadkeys be-latin1
+
+Look online for [more info and more keyboards](https://wiki.archlinux.org/index.php/Keyboard_configuration_in_console)
+
+    localectl list-keymaps | less
+
+
+
+#Time issues
+
+If you have selected the right option in the installation screens everything will be set. But sometimes things go wrong. For that reason I keep it in.
+
+One installation was set as UTC. Type this command to put your computer in the right time zone.
+
+    sudo ln -sf /usr/share/zoneinfo/Europe/Brussels /etc/localtime
+
+With Tab completion (pressing TAB twice) you can easily find a suitable place on earth. Upon next boot it will be correct.
+
+More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clock)
+
+
+
+
 
 #What can you do if the script does not execute?
 
