@@ -564,6 +564,15 @@ Read more [here about grub](https://wiki.archlinux.org/index.php/GRUB)
 
 
 
+##Do you like to have a transparent gnome-terminal
+
+If you like to have a transparent gnome-terminal all the time (compton takes care to make it transparent when the terminal is no longer active), you can run the script
+
+    install-gnome-terminal-transparency-v1
+
+
+![Screenshots](http://i.imgur.com/UNdAuEG.jpg)
+
 
 
 ##Change from bash to zsh in your terminal
