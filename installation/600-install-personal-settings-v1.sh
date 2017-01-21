@@ -20,6 +20,7 @@ echo "Creating all folders"
 [ -d $HOME"/.config/variety/scripts" ] || mkdir -p $HOME"/.config/variety/scripts"
 [ -d $HOME"/.themes" ] || mkdir -p $HOME"/.themes"
 [ -d $HOME"/Desktop" ] || mkdir -p $HOME"/Desktop"
+[ -d $HOME"/Documents" ] || mkdir -p $HOME"/Documents"
 [ -d $HOME"/Downloads" ] || mkdir -p $HOME"/Downloads"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
 #[ -d $HOME"/Dropbox" ] || mkdir -p $HOME"/Dropbox" will be created by dropbox
