@@ -1,4 +1,4 @@
-# Antergos Base + i3 windows manager
+# Antergos Base + i3 windows manager with gaps
 
 We assume you know how to install Antergos Base from the usb/dvd. I have selected all possible options.
 
@@ -44,24 +44,25 @@ The content of this folder should be copied to a hidden folder in your home dire
     cd installation                       (here are all the scripts)
     ls
 
-This folder installation contains all the scripts you will ever need for your i3wm.
+This **installation** folder contains all the scripts you will ever need for your i3wm.
 
 
 ##Software installation
 
-We start the installation scripts of all the needed software via the terminal.
-Go inside the installation folder and run these or even more.
+We start the installation scripts of all the needed software via the terminal **in the right order**.
+Go inside the installation folder and run minimum these scripts. You can run the others once we are in a graphical environment.
  
-    010-install-fastest-antergos-mirrors-vx.sh -Antergos servers
-    020-install-fastest-mirrors-vx - if you want the fastest servers - change countries
-    030-install-xorg-vx.sh - if you have a base system without xserver
-    040-install-packer-for-aur-make-build-v1  - if you do not have packer installed for AUR
-    050-install-i3-core-vx.sh - install standard i3 and afterwards i3 with gaps
-    100-install-core-software-vx.sh
-    200-install-extra-software-vx.sh
-    300-install-themes-icons-cursors-conky-plank-vx.sh
-    400-install-software-distro-specific-vx.sh
-    500-install-samba-vx.sh
+    010-install-fastest-antergos-mirrors-vx.sh              (Antergos servers)
+    020-install-fastest-mirrors-vx                          (if you want the fastest servers - change countries)
+    030-install-xorg-vx.sh                                  (graphical environment needs xserver)
+    040-install-packer-for-aur-make-build-v1                (packer is aur helper)
+    050-install-i3-core-vx.sh                               (installing i3 with gaps)
+    100-install-core-software-vx.sh                         (software from standard repositories)
+    200-install-extra-software-vx.sh                        (software from AUR)
+    300-install-themes-icons-cursors-conky-plank-vx.sh      (beautify your system)
+    400-install-software-distro-specific-vx.sh              (specific software for i3wm)
+    500-install-samba-vx.sh                                 (if you want to share folder on your home network)
+    600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
 
 Do not forget to type "./" in front of the name.
 
@@ -84,43 +85,20 @@ There are other scripts for more applications. If needed, you can install them i
 
 ## setting i3 to start at boot
 
-Navigate to your home folder in my case /home/erik
-
-    cd ..
-    cd ..
-    pwd will give your present working day
-
-In your home folder you type the following line
-
-    cp /etc/X11/xinit/xinitrc ~/.xinitrc
-
-This will give us a template for the file that will start our i3wm.
-
-    ls -al will show you that the file is actually in your home folder
-    cat ~/.xinitrc will type the contents on the screen
-
-Let us edit this file and change the last line to start i3wm.
-
-    nano .xinitrc
-
-Go to the end of the file
-
-Replace the last line from
-
-    exec xterm -geometry 80x60x0x0 -name login
-
-into
-
-    exec i3
-
-Save with CTRL+X and yes.
-
-More info : https://wiki.archlinux.org/index.php/Xinit
+I have automated this process in the script 600. Read the script before executing. 
+It will also create folders if not present. You may want to delete some of those.
 
 
-Type this in the terminal now
+    600-install-personal-settings-vx.sh                     (necessary to be able to boot into i3 automatically)
 
-    startx
+
+
+**You need to change the name in the file **
+
+    installation/settings/autologin@.service
+
+**to your own login name.**
+
 
 
 ##Change how pacman should work

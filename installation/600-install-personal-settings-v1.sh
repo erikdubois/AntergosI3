@@ -29,7 +29,7 @@ echo "Creating all folders"
 
 
 echo "Moving files to start i3wm"
-echo "Sardi icons, Arc theme and noto font"
+echo "Using Sardi icons, Arc theme and noto font from previous scripts"
 
 cp settings/.bash_profile ~/
 cp settings/.bashrc ~/
