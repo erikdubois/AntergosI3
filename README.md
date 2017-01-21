@@ -47,7 +47,6 @@ You are left with a black screen and a prompt. This is your terminal or tty. Log
 
 The idea is to download the i3 github files and start running the scripts, rather then typing the commmands by hand. In this manner you can build up your knowledge and perfect your scripts (and its fun to see it work). And next time you install Antergos I3 the installation will even go smoother.
 
-    sudo pacman -S git
     git clone https://github.com/erikdubois/Antergosi3.git
 
 The **content** of this downloaded folder should be moved to a hidden folder in your home directory with the name  ~/.config/i3. 
