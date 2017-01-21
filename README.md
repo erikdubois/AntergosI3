@@ -21,13 +21,15 @@ My time was set as UTC. Type this command to put your computer in the right time
 
 With Tab completion you can easily find a suitable place on earth. Upon next boot it will be correct.
 
-More info : https://wiki.archlinux.org/index.php/time#Set_clock
+More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clock)
 
 
 
 ## Getting the installation files
 
-The idea is to download the i3 github files and start running the scripts:
+You are left with a black screen and a prompt. This is your terminal or tty.
+
+The idea is to download the i3 github files and start running the scripts, rather then typing the commmand by hand. In this manner you can build up your knowledge. And next time you install Antergos I3 the installation will even go smoother.
 
     sudo pacman -S git
     git clone https://github.com/erikdubois/Antergosi3.git
@@ -35,11 +37,11 @@ The idea is to download the i3 github files and start running the scripts:
 The content of this folder should be copied to a hidden folder in your home directory with the name  ~/.config/i3. 
 
 
+    ls                                    (list files/directories - look around)
+    mv AntergosI3/ ~/.config/i3           (move)
+    cd ~/.config/i3                       (change directory)
     ls
-    mv AntergosI3/ ~/.config/i3
-    cd ~/.config/i3
-    ls
-    cd installation
+    cd installation                       (here are all the scripts)
     ls
 
 This folder installation contains all the scripts you will ever need for your i3wm.
