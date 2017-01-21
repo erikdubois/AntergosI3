@@ -618,9 +618,9 @@ This is just for fun. Matrix look.
 
 ## Mintstick
 
-I have installed over 50+ linux distro's and all cases I used the applications Mintstick from Linux Mint 17,18 or 18.1.
+I have installed over 50+ linux distro's and in all cases I used the application Mintstick from Linux Mint 17,18 or 18.1.
 
-It has never failed me. 
+It has never failed me. So I keep it around on my other distro's.
 
 You have a script to install it. 
 
