@@ -273,7 +273,7 @@ Read more on plank e.g. how to autostart plank on boot : http://erikdubois.be/ca
 
 
 
-## setting i3 to start at boot
+##Setting i3 to start at boot
 
 I have automated this process in the script 600. 
 
@@ -292,7 +292,9 @@ It will also create folders if not present. You may want to delete some of those
 
 **to your own login name.**
 
+Because of these changes the $mod+shift+e will exit i3 but instantly log us back in. In essence it has become a relaunch i3 option and it is very fast. 
 
+Exiting i3wm is done via $mod+Pause/Break and choosing the letters in the bottom bar. ($mod is windows or super key)
 
 
 ##Change how pacman should work
