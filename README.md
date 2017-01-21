@@ -804,7 +804,7 @@ Select everywhere the bose device and A2DP sink.
 
 Play some music. Powerdown your bose headphone and restart it. 
 
-You should have music now.
+You should have music now and it will autoconnect next time around. Just switch your headphone off and on again.
 
 
 #What can you do if the script does not execute?
