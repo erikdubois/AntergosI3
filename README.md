@@ -778,13 +778,13 @@ More info about [time setting](https://wiki.archlinux.org/index.php/time#Set_clo
 
 #Bluetooth issues
 
-It is a the moment quite difficult to get Bose Comfort 35 Bluetooth to work an the many linux distributions.
+It is a the moment quite difficult to get Bose Comfort 35 Bluetooth to work on the many linux distributions.
 
-This will work for me.
+This will work for me on Antergos.
 
 Run the script
 
-    bose-bluetooth-headset-v1
+    bose-bluetooth-headset-vx.sh
 
 Then reboot to be sure...
 

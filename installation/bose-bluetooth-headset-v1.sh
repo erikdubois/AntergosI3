@@ -11,7 +11,7 @@
 #
 ##################################################################################################################
 
-sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils bluez-firmware blueberry
+sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils bluez-firmware blueberry pavucontrol
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
