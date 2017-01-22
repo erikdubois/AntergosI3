@@ -17,9 +17,12 @@ conky.config = {
 	own_window_transparent = true,
 	update_interval = 2.0,
 	use_xft = true,
+	color1 = 'FE5E52',
+	color2 = 'eeeeee',
+	color3 = '0000ff',
 }
 conky.text = [[
-default mod=<Windows>
+${color2}default ${color1}mod=<Windows>
 
 ${color2}open new terminal - ${color1}mod+Enter
 ${color2}open file manager - ${color1}mod+Shift+Enter
@@ -35,7 +38,7 @@ ${color2}tile vertically - ${color1}mod+v
 ${color2}tile horizontally - ${color1}mod+h
 ${color2}Inkscape - ${color1}Ctrl+Alt+i
 ${color2}Gimp - ${color1}Ctrl+Alt+g
-${color2}Cinnamon Settings - ${color1}Ctrl+Alt+n
+${color2}Settings - ${color1}Ctrl+Alt+n
 ${color2}reload config file - ${color1}mod+Shift+r
 ${color2}System - ${color1}mod+Pause/Break
 ${color2}Exit i3 - ${color1}mod+Shift+e
