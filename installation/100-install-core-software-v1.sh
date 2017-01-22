@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm --needed galculator geary gimp git gksu glances gnome
 sudo pacman -S --noconfirm --needed gnome-font-viewer gnome-screenshot gnome-system-monitor gnome-terminal gnome-tweak-tool 
 sudo pacman -S --noconfirm --needed gparted gpick grsync
 sudo pacman -S --noconfirm --needed hardinfo hddtemp hexchat htop 
-sudo pacman -S --noconfirm --needed inkscape inxi lm_sensors meld mlocate mpv
+sudo pacman -S --noconfirm --needed inkscape inxi lm_sensors lsb-release meld mlocate mpv
 sudo pacman -S --noconfirm --needed nemo numlockx openshot opera pamac pinta plank polkit-gnome 
 sudo pacman -S --noconfirm --needed redshift ristretto sane screenfetch scrot shotwell 
 sudo pacman -S --noconfirm --needed shutter simple-scan simplescreenrecorder smplayer sysstat 
