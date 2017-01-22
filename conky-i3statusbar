@@ -34,7 +34,7 @@ conky.config = {
 conky.text = [[
   [
     {
-      "full_text": " Linux Mint 18 Cinnamon $kernel ",
+      "full_text": " ${execi 6000 lsb_release -d | grep 'Descr'|awk {'print $2 " " $3" " $4" " $5'}} $kernel ",
       "color": "\#fdf6e3",
       "background": "\#dc322f",
       "separator": true,
