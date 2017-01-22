@@ -747,7 +747,6 @@ status_command i3status -c ~/.config/i3/i3status.conf
 
     # https://github.com/vivien/i3blocks
     # another way to provide text in the statusbar
-    # step 10 of https://github.com/erikdubois/i3-on-Linux-Mint-18-Cinnamon/tree/master/installation
     # put hastag in front if not installed
 
 #status_command i3blocks
