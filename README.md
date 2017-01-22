@@ -68,7 +68,7 @@ We start the installation scripts of all the needed software via the terminal **
 Go inside the installation folder and run minimum these scripts. You can run the others once we are in a graphical environment.
  
     010-install-fastest-antergos-mirrors-vx.sh           (Antergos servers)
-    020-install-fastest-arch-mirrors-vx                  (if you want the fastest servers - change countries)
+    020-install-fastest-arch-mirrors-vx                  (if you want the fastest servers)
     030-install-xorg-vx.sh                               (graphical environment needs xserver)
     040-install-packer-for-aur-make-build-v1             (packer is aur helper)
     050-install-i3-core-vx.sh                            (installing i3 with gaps)
