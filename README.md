@@ -149,10 +149,6 @@ If you finished installing the scripts mentioned above then the magic can start.
 
 # After rebooting
 
-## Firefox
-
-I like the dark themes. But some of the websites (like youtube) give you unreadable inputboxes. After rebooting and starting firefox once (normally firefox is started on workspace 1), you can run script 700 to copy/paste the solution to the right place.
-
 
 ##Single or Dual monitor
 
@@ -175,6 +171,14 @@ There is also a script included that might help. This is to tell the system whic
     dualscreen_autoset.sh
 
 More info can be found on the official website of i3wm : https://i3wm.org/docs/userguide.html
+
+
+## Firefox
+
+I like the dark themes. But some of the websites (like youtube) give you unreadable inputboxes. After rebooting and starting firefox once (normally firefox is started on workspace 1), you can run script 700 to copy/paste the solution to the right place.
+
+
+
 
 ##Variety 
 
