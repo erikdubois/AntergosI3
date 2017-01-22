@@ -23,11 +23,11 @@ echo "################################################################"
 
 # finding the fastest archlinux servers
 
-sudo reflector -l 100 -f 50 --sort rate --threads 5 --verbose --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/mirrorlist.new > /tmp/mirrorlist && sudo cp /tmp/mirrorlist /etc/pacman.d
+sudo reflector -l 100 -f 50 -c BE -c NL -c FR -c DE -c GB --sort rate --threads 5 --verbose --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/mirrorlist.new > /tmp/mirrorlist && sudo cp /tmp/mirrorlist /etc/pacman.d
 
 
 echo "################################################################"
-echo "####       fastest servers  saved                            ###"
+echo "####       fastest servers above countries saved             ###"
 echo "################################################################"
 
 
