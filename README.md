@@ -121,6 +121,14 @@ It will put all necessary files/commands in the right places (startx, xintrc,...
 
 **to your own login name.**
 
+You are normally in the directory "installation". Go inside the directory "settings"
+
+    cd settings
+    nano autologin@.service
+    Look for the name "erik" and change it to your login
+    CTRL+X to save your file
+
+
 Because of these changes the $mod+shift+e will exit i3 but instantly log you back in. In essence it has become a relaunch i3 option and it is very fast. 
 
 Exiting i3wm is done via $mod+Pause/Break and choosing the letters in the bottom bar. ($mod is windows or super key)
