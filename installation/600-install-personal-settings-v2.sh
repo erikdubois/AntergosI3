@@ -15,6 +15,7 @@
 echo "Creating all folders"
 
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
+[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
 [ -d $HOME"/.config/conky" ] || mkdir -p $HOME"/.config/conky"
 [ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
 [ -d $HOME"/.config/variety/scripts" ] || mkdir -p $HOME"/.config/variety/scripts"
@@ -51,10 +52,6 @@ echo "Copy/pasting Arc Colora themes to ~/.themes"
 
 cp -r Arc\ Colora/* ~/.themes/
 
-
-echo "Making sure firefox looks great in dark themes"
-
-cp -r settings/firefox/chrome/ ~/.mozilla/firefox/*.default
 
 echo "Making sure gnome-screenshot saves in jpg - smaller in kb"
 
