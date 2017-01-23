@@ -85,7 +85,7 @@ sh install-visual-studio-code-v1.sh
 
 # Vivaldi
 
-sh install-vivaldi-v1.sh
+#sh install-vivaldi-v1.sh
 
 ###############################################################################################
 
