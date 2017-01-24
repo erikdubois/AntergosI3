@@ -11,6 +11,9 @@
 #
 ##################################################################################################################
 
+echo "###############################################################################"
+echo "DID YOU CHANGE THE NAME OF THE LOGIN in the file autologin@.service"
+echo "###############################################################################"
 
 echo "Creating all folders"
 
@@ -83,6 +86,16 @@ echo "################################################################"
 echo "#########       personal settings installed     ################"
 echo "################################################################"
 
+echo "###############################################################################"
+echo "DID YOU CHANGE THE NAME OF THE LOGIN in the file autologin@.service"
+echo "###############################################################################"
+echo "cd settings"
+echo "nano autologin@.service"
+echo "look for my name erik and change it your login"
+echo "save it with CTRL+X"
+echo "cd .."
+echo "run script 600 again if you just now changed your login"
+echo
 echo "Finally you can reboot and start computing"
 echo "You will be logged in automatically."
 echo "Type in the terminal the following code"
