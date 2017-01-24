@@ -89,6 +89,7 @@ echo "################################################################"
 echo "###############################################################################"
 echo "DID YOU CHANGE THE NAME OF THE LOGIN in the file autologin@.service"
 echo "###############################################################################"
+echo
 echo "cd settings"
 echo "nano autologin@.service"
 echo "look for my name erik and change it your login"
