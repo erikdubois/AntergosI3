@@ -17,6 +17,12 @@
 
 ###############################################################################################
 
+# Awesome font for icons on i3blocks.conf
+
+install-awesome-font-v1.sh
+
+###############################################################################################
+
 # Brackets
 
 #sh install-brackets-v1.sh
@@ -85,7 +91,7 @@ sh install-visual-studio-code-v1.sh
 
 # Vivaldi
 
-#sh install-vivaldi-v1.sh
+sh install-vivaldi-v1.sh
 
 ###############################################################################################
 
