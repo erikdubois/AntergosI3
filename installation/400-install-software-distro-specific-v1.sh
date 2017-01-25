@@ -192,7 +192,7 @@ echo "Trying to solve the conflicts since in some of the pasystray packages ther
 echo "And they conflict."
 echo "Running the script may help."
 
-sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-*
+sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-* --noconfirm
 
 echo "If installation fails, go look for the file yourself via this command"
 echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-xxx "
