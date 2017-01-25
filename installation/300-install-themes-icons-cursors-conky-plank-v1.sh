@@ -48,7 +48,7 @@ sh install-gtk-arc-theme-git-v1.sh
 
 # Plank themes
 
-sh plank-themes-v2.sh
+#sh plank-themes-v2.sh
 
 ###############################################################################################
 
