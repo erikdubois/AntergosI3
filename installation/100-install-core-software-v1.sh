@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm --needed simple-scan simplescreenrecorder smplayer sy
 sudo pacman -S --noconfirm --needed terminator thunar transmission-cli transmission-gtk
 sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter  
 
-numlockx on
+#numlockx on
 #sudo systemctl enable vnstat
 #sudo systemctl start vnstat
 
