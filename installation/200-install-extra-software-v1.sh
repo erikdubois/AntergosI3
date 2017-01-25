@@ -37,7 +37,7 @@ sh install-dropbox-v1.sh
 
 # Canon
 
-sh install-canon-mg7750-v1.sh
+#sh install-canon-mg7750-v1.sh
 
 ###############################################################################################
 
@@ -97,7 +97,7 @@ sh install-vivaldi-v1.sh
 
 # zsh
 
-sh install-zsh-v1.sh
+#sh install-zsh-v1.sh
 
 ###############################################################################################
 
