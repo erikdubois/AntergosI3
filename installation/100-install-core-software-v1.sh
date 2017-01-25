@@ -27,6 +27,9 @@ sudo pacman -S --noconfirm --needed simple-scan simplescreenrecorder smplayer sy
 sudo pacman -S --noconfirm --needed terminator thunar transmission-cli transmission-gtk
 sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter  
 
+numlockx on
+sudo systemctl enable vnstat
+sudo systemctl start vnstat
 
 ###############################################################################################
 
@@ -35,10 +38,6 @@ sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  a
 
 ###############################################################################################
 
-
-numlockx on
-sudo systemctl enable vnstat
-sudo systemctl start vnstat
 
 echo "################################################################"
 echo "###################    core software installed  ################"
