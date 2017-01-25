@@ -13,6 +13,7 @@ set -e
 #tmpfs is getting to full at the end 
 #making the tmpfs bigger with 1GB to ensure completion of scripts
 #https://wiki.archlinux.org/index.php/Tmpfs
+#this line was only necessary for vmware installations
 sudo mount -o remount,size=4G,noatime /tmp
 
 

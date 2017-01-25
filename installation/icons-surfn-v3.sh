@@ -11,17 +11,18 @@
 #
 ##################################################################################################################
 
-
-
-rm -rf /tmp/Surfn
-git clone https://github.com/erikdubois/Surfn /tmp/Surfn
-find /tmp/Surfn -maxdepth 1 -type f -exec rm -rf '{}' \;
+# cleaning tmp
+[ -d /tmp/Surfn ] && rm -rf /tmp/Surfn
 
 # if there is no hidden folder then make one
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
+git clone https://github.com/erikdubois/Surfn /tmp/Surfn
+find /tmp/Surfn -maxdepth 1 -type f -exec rm -rf '{}' \;
 cp -rf /tmp/Surfn/* ~/.icons/
-rm -rf /tmp/Surfn
+
+# cleaning tmp
+[ -d /tmp/Surfn ] && rm -rf /tmp/Surfn
 
 
 
