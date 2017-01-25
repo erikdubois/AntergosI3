@@ -168,8 +168,9 @@ else
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 	echo "To install pasytray, go to tmp file and run from there"
+	echo "Trying to solve the conflicts"
 	echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
-	echo "Trying to run the git version"
+	echo "Trying to run from tmp"
 	sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2*  --needed --noconfirm
 	fi
 
