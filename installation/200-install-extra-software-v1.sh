@@ -19,7 +19,7 @@ set -e
 
 # Awesome font for icons on i3blocks.conf
 
-install-awesome-font-v1.sh
+sh install-awesome-font-v1.sh
 
 ###############################################################################################
 
