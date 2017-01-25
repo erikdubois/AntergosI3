@@ -44,6 +44,19 @@ sudo packer -S arandr  --noconfirm
 #run with systemadm
 sudo packer -S systemd-ui  --noconfirm 
 
+#sudo pacman -S gnome-terminal  --noconfirm --needed
+#Printer
+
+sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm --needed
+systemctl enable org.cups.cupsd.service
+systemctl start org.cups.cupsd.service
+
+#Network
+
+sudo pacman -S networkmanager --noconfirm --needed
+sudo pacman -S network-manager-applet --noconfirm --needed
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
 
 
 
@@ -167,29 +180,19 @@ else
 	echo "!!!!!!!!!  "$package" has NOT been installed"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
-	echo "To install pasytray, go to tmp file and run from there"
-	echo "Trying to solve the conflicts"
-	echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
-	echo "Trying to run from tmp"
-	sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2*  --needed --noconfirm
+
 	fi
 
 fi
 
+echo "To install pasytray, I will go to tmp file and run from there"
+echo "Trying to solve the conflicts since there are two package in the download"
+echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
+echo "Run the script again if need be..."
 
-#sudo pacman -S gnome-terminal  --noconfirm --needed
-#Printer
+sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2*  --needed --noconfirm
 
-sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm --needed
-systemctl enable org.cups.cupsd.service
-systemctl start org.cups.cupsd.service
 
-#Network
-
-sudo pacman -S networkmanager --noconfirm --needed
-sudo pacman -S network-manager-applet --noconfirm --needed
-sudo systemctl enable NetworkManager.service
-sudo systemctl start NetworkManager.service
 
 
 
