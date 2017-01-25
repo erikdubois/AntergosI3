@@ -187,6 +187,7 @@ fi
 
 echo "To install pasytray, I will go to tmp file and run from there"
 echo "Trying to solve the conflicts since there are two package in the download"
+echo "Running the script may help."
 
 sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-*
 
