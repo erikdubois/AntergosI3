@@ -136,7 +136,7 @@ echo "trayicon for sound for bluetooth headphone"
 echo "################################################################"
 
 
-package="pasystray"
+package="pasystray-gtk3-standalone"
 
 #----------------------------------------------------------------------------------
 
@@ -192,7 +192,8 @@ echo "Run the script again if need be..."
 
 sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2*  --needed --noconfirm
 
-
+echo "If installation fails, go look for the file yourself via this command"
+echo "sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2xxx "
 
 
 
