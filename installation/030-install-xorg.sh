@@ -13,8 +13,8 @@ set -e
 
 echo " Xserver setup"
 
-sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm --noconfirm
-sudo pacman -S xf86-video-nouveau --noconfirm
+sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm --noconfirm --needed
+sudo pacman -S xf86-video-nouveau --noconfirm --needed
 
 echo "################################################################"
 echo "###################    xorg installed     ######################"
