@@ -29,7 +29,7 @@ sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter
 
 numlockx on
 sudo systemctl enable vnstat
-sudo systemctl start vnstat
+#sudo systemctl start vnstat
 
 ###############################################################################################
 
