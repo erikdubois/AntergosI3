@@ -119,7 +119,7 @@ else
 fi
 
 echo "################################################################"
-echo "trayicon for bluetooth headphone"
+echo "trayicon for sound for bluetooth headphone"
 echo "################################################################"
 
 
