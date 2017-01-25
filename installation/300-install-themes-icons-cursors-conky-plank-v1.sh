@@ -10,6 +10,11 @@ set -e
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+#tmpfs is getting to full at the end 
+#making the tmpfs bigger with 1GB to ensure completion of scripts
+#https://wiki.archlinux.org/index.php/Tmpfs
+sudo mount -o remount,size=4G,noatime /tmp
+
 
 # Conky Aureola
 
@@ -19,7 +24,7 @@ sh conky-aureola-v2.sh
 
 # Sardi-extra icons
 
-sh icons-sardi-extra-v2.sh
+sh icons-sardi-extra-v3.sh
 
 ###############################################################################################
 
