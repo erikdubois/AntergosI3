@@ -30,7 +30,7 @@ sh icons-sardi-extra-v3.sh
 
 # Sardi icons
 
-sh icons-sardi-v2.sh
+sh icons-sardi-v3.sh
 
 ###############################################################################################
 

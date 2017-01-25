@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -12,23 +12,23 @@
 ##################################################################################################################
 
 
-
-rm -rf /tmp/sardi
-# if there is no hidden folder then make one
-[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
-wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
-mkdir /tmp/sardi
-tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
-rm /tmp/sardi.tar.gz
+# cleaning tmp
+[ -d /tmp/Sardi-Extra ] && rm -rf /tmp/Sardi-Extra
 
 # if there is no hidden folder then make one
 [ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
 
-cp -rf /tmp/sardi/* ~/.icons/
-rm -rf /tmp/sardi
+git clone https://github.com/erikdubois/Sardi-Extra /tmp/Sardi-Extra
+find /tmp/Sardi-Extra -maxdepth 1 -type f -exec rm -rf '{}' \;
+
+cp -rf /tmp/Sardi-Extra/* ~/.icons/
+
+# cleaning tmp
+[ -d /tmp/Sardi-Extra ] && rm -rf /tmp/Sardi-Extra
+
 
 
 
 echo "################################################################"
-echo "###################    icons sardi done   ######################"
+echo "###################    icons sardi extra done  #################"
 echo "################################################################"
