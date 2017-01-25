@@ -11,25 +11,6 @@
 #
 ##################################################################################################################
 
-#Core stuff i3
-
-echo "################################################################"
-echo "i 3  improved tiling core files"
-echo "################################################################"
-
-#if pacman -Qi i3-gaps-next-git &> /dev/null; then
-
-	echo "i3-gaps-next-git already installed"
-
-#else 
-
-#	sudo pacman -S --noconfirm --needed i3-wm i3lock i3status 
-
-#fi
-
-
-
-# original statusbar for i3
 
 echo "################################################################"
 echo "i3status"   
