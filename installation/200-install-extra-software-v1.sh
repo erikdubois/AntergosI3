@@ -85,7 +85,7 @@ sh install-sublime-text-v1.sh
 
 # Visual studio code
 
-sh install-visual-studio-code-v1.sh
+#sh install-visual-studio-code-v1.sh
 
 ###############################################################################################
 
