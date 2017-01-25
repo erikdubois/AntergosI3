@@ -37,7 +37,7 @@ sh icons-sardi-v3.sh
 
 # Surfn icons
 
-sh icons-surfn-v2.sh
+sh icons-surfn-v3.sh
 
 ###############################################################################################
 
