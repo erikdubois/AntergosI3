@@ -72,13 +72,3 @@ else
 	fi
 
 fi
-
-
-
-
-#sudo pacman -U /tmp/packer/packer-*.pkg.tar.xz
-
-echo "########################################"
-echo "########    packer installed   #########"
-echo "########################################"
-
