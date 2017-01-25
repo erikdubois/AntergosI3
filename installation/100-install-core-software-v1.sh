@@ -28,7 +28,7 @@ sudo pacman -S --noconfirm --needed terminator thunar transmission-cli transmiss
 sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter  
 
 numlockx on
-sudo systemctl enable vnstat
+#sudo systemctl enable vnstat
 #sudo systemctl start vnstat
 
 ###############################################################################################
