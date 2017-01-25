@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+#set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -187,13 +187,11 @@ fi
 
 echo "To install pasytray, I will go to tmp file and run from there"
 echo "Trying to solve the conflicts since there are two package in the download"
-echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
-echo "Run the script again if need be..."
 
-sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2*  --needed --noconfirm
+sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-*
 
 echo "If installation fails, go look for the file yourself via this command"
-echo "sudo pacman -U /tmp/packerbuild-1000/pasystray/pasystray/pasystray-gtk2xxx "
+echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-gtk3-standalone/pasystray-gtk3-standalone/pasystray-gtk3-standalone-xxx "
 
 
 
