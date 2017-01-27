@@ -25,7 +25,7 @@ sudo pacman -S --noconfirm --needed nemo
 sudo pacman -S noto-fonts --noconfirm --needed
 
 #Utilities
-
+sudo pacman -S pamac --noconfirm --needed 
 sudo pacman -S notify-osd  --noconfirm --needed
 sudo pacman -S lxappearance --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
