@@ -19,7 +19,7 @@ echo "Firefox must have started once. The directory will not exist otherwise."
 
 cp -r settings/firefox/chrome/ ~/.mozilla/firefox/*.default
 
-echo "reboot firefox to see the effect"
+echo "Reboot firefox to see the effect"
 
 
 echo "################################################################"

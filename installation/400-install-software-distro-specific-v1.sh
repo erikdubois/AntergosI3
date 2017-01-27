@@ -11,11 +11,9 @@
 #
 ##################################################################################################################
 
-
-#file manager
-
-sudo pacman -S --noconfirm --needed nemo
-
+echo "################################################################"
+echo "#########   distro specific software installed  ################"
+echo "################################################################"
 
 #Fonts
 
@@ -23,6 +21,13 @@ sudo pacman -S --noconfirm --needed nemo
 ## sudo pacman -S ttf-droid --noconfirm --noconfirm --needed  conflicts with ttf-google-fonts
 ## sudo pacman -S ttf-inconsolata --noconfirm --needed        conflicts with ttf-google-fonts
 sudo pacman -S noto-fonts --noconfirm --needed
+
+#file manager
+
+sudo pacman -S --noconfirm --needed nemo
+
+
+
 
 #Utilities
 sudo pacman -S pamac --noconfirm --needed 
@@ -39,16 +44,6 @@ sudo packer -S arandr  --noconfirm
 #run with systemadm
 sudo packer -S systemd-ui  --noconfirm 
 
-
-
-
-#echo "################################################################"
-#echo "installing xbindkeys"
-#echo "################################################################"
-
-#sudo pacman -S xbindkeys --noconfirm --needed
-
-#echo "You need to put the config file in the root of your home folder"
 
 
         # S Y S T E M  T O O L S # 

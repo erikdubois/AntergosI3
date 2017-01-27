@@ -19,7 +19,7 @@ set -e
 
 # Awesome font for icons on i3blocks.conf
 
-sh install-awesome-font-v1.sh
+#sh install-awesome-font-v1.sh
 
 ###############################################################################################
 
@@ -31,7 +31,7 @@ sh install-awesome-font-v1.sh
 
 # Dropbox
 
-sh install-dropbox-v1.sh
+#sh install-dropbox-v1.sh
 
 ###############################################################################################
 
@@ -43,7 +43,7 @@ sh install-dropbox-v1.sh
 
 # Insysc
 
-sh install-insync-v1.sh
+#sh install-insync-v1.sh
 
 ###############################################################################################
 
@@ -61,7 +61,7 @@ sh install-neofetch-v1.sh
 
 # Peek
 
-sh install-peek-v1.sh
+#sh install-peek-v1.sh
 
 ###############################################################################################
 
@@ -91,7 +91,7 @@ sh install-sublime-text-v1.sh
 
 # Vivaldi
 
-sh install-vivaldi-v1.sh
+#sh install-vivaldi-v1.sh
 
 ###############################################################################################
 
