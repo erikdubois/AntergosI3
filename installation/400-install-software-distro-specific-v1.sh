@@ -17,11 +17,6 @@
 sudo pacman -S --noconfirm --needed nemo
 
 
-#Sound
-
-sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol  --noconfirm --needed
-sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer  --noconfirm --needed
-
 #Fonts
 
 ## sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed conflicts with ttf-google-fonts
@@ -44,26 +39,7 @@ sudo packer -S arandr  --noconfirm
 #run with systemadm
 sudo packer -S systemd-ui  --noconfirm 
 
-#sudo pacman -S gnome-terminal  --noconfirm --needed
-#Printer
 
-sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer --noconfirm --needed
-systemctl enable org.cups.cupsd.service
-systemctl start org.cups.cupsd.service
-
-#Network
-
-sudo pacman -S networkmanager --noconfirm --needed
-sudo pacman -S network-manager-applet --noconfirm --needed
-sudo systemctl enable NetworkManager.service
-sudo systemctl start NetworkManager.service
-
-
-
-# if you want a networkmanager and applet mostly for laptop/wireless as
-# lan just works and gives no added value
-
-# sudo pacman -S network-manager-applet --noconfirm
 
 
 #echo "################################################################"
