@@ -53,6 +53,8 @@ rm -rf /tmp/aureola
 
 git clone https://github.com/erikdubois/Aureola /tmp/aureola
 
+# if there is already a folder in tmp, delete or else do nothing
+[ -d ~/.aureola ] && rm -rf ~/.aureola 
 mv -f /tmp/aureola ~/.aureola
 
 rm -rf /tmp/aureola
