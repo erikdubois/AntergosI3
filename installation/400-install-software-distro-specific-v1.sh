@@ -1,4 +1,5 @@
 #!/bin/bash
+#never use the next line in this script or pasystray will not be installed
 #set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
@@ -24,10 +25,14 @@ sudo pacman -S noto-fonts --noconfirm --needed
 
 #file manager
 
-sudo pacman -S --noconfirm --needed nemo
+sudo pacman -S nemo --noconfirm --needed
 
 
+#Fonts
 
+#sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed
+#sudo pacman -S ttf-droid --noconfirm --noconfirm --needed
+#sudo pacman -S ttf-inconsolata --noconfirm --needed
 
 #Utilities
 sudo pacman -S pamac --noconfirm --needed 
@@ -101,6 +106,10 @@ else
 	fi
 
 fi
+
+
+
+
 
 echo "################################################################"
 echo "trayicon for sound for bluetooth headphone"

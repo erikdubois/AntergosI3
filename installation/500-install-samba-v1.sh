@@ -13,7 +13,7 @@ set -e
 
 
 sudo pacman -S --noconfirm --needed samba
-sudo cp  /etc/samba/smb.conf.default /etc/samba/smb.conf
+sudo cp /etc/samba/smb.conf.default /etc/samba/smb.conf
 sudo systemctl enable smbd.service
 sudo systemctl start smbd.service
 sudo systemctl enable nmbd.service

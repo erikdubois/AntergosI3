@@ -20,7 +20,7 @@ sudo mount -o remount,size=4G,noatime /tmp
 
 # Conky Aureola
 
-sh conky-aureola-v2.sh
+sh conky-aureola-v3.sh
 
 ###############################################################################################
 
