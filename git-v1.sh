@@ -36,7 +36,6 @@
 
 # checking if kernel files are present otherswise github will become too big
 
-
 if [ -f linux* ]; then
 	echo "####################################"
     	echo "Stopping the script!!"

@@ -11,16 +11,6 @@
 #
 ##################################################################################################################
 
-# Standard text output from Github
-
-# echo "# Github Tutorial" >> README.md
-# git init
-# git add README.md
-# git commit -m "first commit"
-# git remote add origin https://github.com/erikdubois/Github-Tutorial.git
-# git push -u origin master
-
-
 # Problem solving commands
 
 # Read before using it.
@@ -67,9 +57,6 @@ if ! location="$(type -p "git")" || [ -z "git" ]; then
 
 fi
 
-
-
-
 #setting up git
 #https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
 
@@ -80,10 +67,6 @@ sudo git config --system core.editor nano
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=18000'
 git config --global push.default simple
-
-
-
-#git remote add origin https://github.com/erikdubois/Ultimate-Linux-Mint-18-Cinnamon.git
 
 
 echo "################################################################"
