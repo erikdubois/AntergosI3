@@ -148,7 +148,7 @@ esac
 
 # define the github here, just last part
 
-GITHUB=AntergosI3
+GITHUB=LinuxMint181i3
 
 echo "################################################################"
 echo "Checking if /tmp folder is clean"
@@ -179,7 +179,7 @@ if find ~/.config/i3 -mindepth 1 > /dev/null ; then
 
 	read -p "Everything in folder ~/.config/i3 will be deleted. Are you sure? (y/n)?" choice
 	case "$choice" in 
- 	 y|Y ) rm -r ~/.config/i3/*;;
+ 	 y|Y ) rm -rf ~/.config/i3/* ;;
  	 n|N ) echo "Nothing has changed." & echo "Script ended!" & exit;;
  	 * ) echo "Type y or n." & echo "Script ended!" & exit;;
 	esac
