@@ -21,13 +21,13 @@ sudo pacman -S --noconfirm --needed gnome-font-viewer gnome-screenshot gnome-sys
 sudo pacman -S --noconfirm --needed gparted gpick grsync
 sudo pacman -S --noconfirm --needed hardinfo hddtemp hexchat htop 
 sudo pacman -S --noconfirm --needed inkscape inxi lm_sensors lsb-release meld mlocate mpv
-sudo pacman -S --noconfirm --needed nemo numlockx openshot pinta plank polkit-gnome 
+sudo pacman -S --noconfirm --needed nemo net-tools notify-osd numlockx openshot pinta plank polkit-gnome 
 sudo pacman -S --noconfirm --needed redshift ristretto sane screenfetch scrot shotwell 
 sudo pacman -S --noconfirm --needed simple-scan simplescreenrecorder smplayer sysstat 
-sudo pacman -S --noconfirm --needed terminator thunar transmission-cli transmission-gtk
+sudo pacman -S --noconfirm --needed terminator thunar transmission-cli transmission-gtk tumbler
 sudo pacman -S --noconfirm --needed variety vlc vnstat wget unclutter  
 
-#numlockx on
+numlockx on
 #sudo systemctl enable vnstat
 #sudo systemctl start vnstat
 
