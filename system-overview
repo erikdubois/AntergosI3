@@ -1,7 +1,7 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-		cpu_avg_samples = 2,
+	cpu_avg_samples = 2,
 	default_color = 'FFFFFF',
 	double_buffer = true,
 	font = 'Noto Mono:size=12:bold',

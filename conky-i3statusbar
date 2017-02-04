@@ -1,7 +1,7 @@
 --[[
 #=====================================================================================
 #                               i3 on linux mint 18 cinnamon
-# Date    : 22/09/2016
+# Date    : 22/01/2017
 # Author  : Erik Dubois at http://www.erikdubois.be
 # License : Distributed under the terms of GNU GPL version 2 or later
 # Documentation English: http://erikdubois.be/category/linux/i3/
@@ -76,7 +76,9 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
+      #linux mint
       "full_text": "  ${texeci 1800 sleep 5; aptitude search '~U' | wc -l} updates ",
+      #arch
       #"full_text": "  ${texeci 1800 sleep 5; checkupdates | wc -l}+${texeci 1800 sleep 5; packer --quickcheck | wc -l} updates",
       "color": "\#fdf6e3",
       "background": "\#2aa198",
@@ -84,6 +86,7 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
+      #check name of ethernet/wireless with ip addr or ifconfig
       "full_text": "  up: ${upspeed enp2s0} down: ${downspeed enp2s0} ",
       "color": "\#fdf6e3",
       "background": "\#2aa198",
@@ -99,9 +102,9 @@ conky.text = [[
     },
     {
       #linux mint
-      "full_text": " ${exec amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      "full_text": "  ${exec amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9\%]//g' | head -n1} ",
       #arch linux
-      #"full_text": " ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
+      #"full_text": "  ${exec amixer get Master | grep % | awk '{print $5}' | sed 's/[^0-9\%]//g' | head -n1} ",
       "color": "\#fdf6e3",
       "background": "\#859900",
       "separator": true,
@@ -115,14 +118,14 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      "full_text": "  ${time %a, %d/%m/%y }",
+      "full_text": "  ${time %a, %d/%m/%y} ",
       "color": "\#fdf6e3",
       "background": "\#6c71c4",
       "separator": true,
       "separator_block_width": 0
     },
     {
-      "full_text": " ${time %H:%M:%S} ",
+      "full_text": "  ${time %H:%M:%S} ",
       "color": "\#fdf6e3",
       "background": "\#6c71c4",
       "separator": true,
